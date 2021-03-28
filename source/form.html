@@ -35,72 +35,72 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="main__title text2">Подбор программы</h1>
-    <p class="main__slogan text3">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <h1 class="main__title">Подбор программы</h1>
+    <p class="main__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
       <fieldset class="form__fieldset">
         <legend class="visually hidden">Name</legend>
         <p class="form__filed-wrapper">
-          <label class="form__label text7" for="name">Имя:*</label>
-          <input class="form__input text4" id="name" type="text" name="name" value="Барсик">
+          <label class="form__label text-ordinary" for="name">Имя:*</label>
+          <input class="form__input form__input-text" id="name" type="text" name="name" value="Барсик">
         </p>
         <p class="form__filed-wrapper">
-          <label class="form__label text7" for="weight">Вес (кг):*</label>
-          <input class="form__input text4" id="weight" type="text" name="weight" value="7">
+          <label class="form__label text-ordinary" for="weight">Вес (кг):*</label>
+          <input class="form__input form__input-text" id="weight" type="text" name="weight" value="7">
         </p>
         <p class="form__filed-wrapper">
-          <label class="form__label text7" for="age">Возраст (лет):</label>
-          <input class="form__input text4" id="age" type="text" name="age" value="7">
+          <label class="form__label text-ordinary" for="age">Возраст (лет):</label>
+          <input class="form__input form__input-text" id="age" type="text" name="age" value="7">
         </p>
       </fieldset>
       <fieldset>
         <legend class="visually-hidden">Похудеть или набрать?</legend>
         <p>
           <input class="radio-input visually-hidden" name="loose" type="radio" value="loose" id="loose">
-          <label class="radio-label text5" for="loose">Похудение</label>
+          <label class="radio-label" for="loose">Похудение</label>
         </p>
         <p>
           <input class="radio-input visually-hidden" name="build" type="radio" value="build" id="build">
-          <label class="radio-label text5" for="build">Набор массы</label>
+          <label class="radio-label" for="build">Набор массы</label>
         </p>
         <p>
           <input class="radio-input visually-hidden" name="dontknow" type="radio" value="dontknow" id="dontknow">
-          <label class="radio-label text5" for="dontknow">Не знаю (нужен ваш совет)</label>
+          <label class="radio-label" for="dontknow">Не знаю (нужен ваш совет)</label>
         </p>
       </fieldset>
       <fieldset class="form__contacts contacts">
-        <legend class="text6">Контактные данные (владельца кота)</legend>
+        <legend class="text-legend">Контактные данные (владельца кота)</legend>
         <p class="contacts__item">
-          <label class="text7" for="email">E-mail:*</label>
-          <input class="text7" id="email" type="text" name="email" value="kuklachev@gmail.com">
+          <label class="text-ordinary" for="email">E-mail:*</label>
+          <input class="text-ordinary" id="email" type="text" name="email" value="kuklachev@gmail.com">
         </p>
         <p class="contacts__item">
-          <label class="text7" for="tel">Телефон</label>
-          <input class="text7" id="tel" type="text" name="tel" value="8 (960) 900-60-90">
+          <label class="text-ordinary" for="tel">Телефон</label>
+          <input class="text-ordinary" id="tel" type="text" name="tel" value="8 (960) 900-60-90">
         </p>
       </fieldset>
       <fieldset class="form__comments">
-        <legend class="text6">Комментарий</legend>
+        <legend class="text-legend">Комментарий</legend>
         <label class="visually hidden">comments</label>
-        <textarea class="text7" name="comment" id="comment-field" rows="6">Расскажите обо всех повадках кота</textarea>
+        <textarea class="text-ordinary" name="comment" id="comment-field" rows="6">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="form__moreinf">
-        <legend class="form__legend text6">Дополнительно</legend>
+        <legend class="form__legend text-legend">Дополнительно</legend>
         <p class="checkbox">
           <input class="cheсkbox-input visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
-          <label class="cheсkbox-label text8" for="sugar">Сахарозаменитель</label>
+          <label class="cheсkbox-label" for="sugar">Сахарозаменитель</label>
         </p>
         <p class="checkbox">
           <input class="cheсkbox-input visually-hidden" type="checkbox" name="water" id="water">
-          <label class="cheсkbox-label text8" for="water">Питьевая вода</label>
+          <label class="cheсkbox-label" for="water">Питьевая вода</label>
         </p>
         <p class="checkbox">
           <input class="cheсkbox-input visually-hidden" type="checkbox" name="milk" id="milk">
-          <label class="cheсkbox-label text8" for="milk">Молоко</label>
+          <label class="cheсkbox-label" for="milk">Молоко</label>
         </p>
         <p class="checkbox">
           <input class="cheсkbox-input visually-hidden" type="checkbox" name="vita" id="vita">
-          <label class="cheсkbox-label text8" for="vita">Витамины</label>
+          <label class="cheсkbox-label" for="vita">Витамины</label>
         </p>
       </fieldset>
       <p><button class="form__send button" type="submit">Отправить заявку</button></p>

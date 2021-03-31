@@ -1,4 +1,8 @@
 //.wrapper {}
+.rullers {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -9,6 +13,12 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.toggle {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
 }
 
 .button {

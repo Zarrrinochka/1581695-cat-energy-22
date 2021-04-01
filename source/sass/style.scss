@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+//общие
+@import "common/fonts";
+@import "common/variables";
+@import "common/global";
+//блоки
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/main";
+@import "blocks/programs";
+@import "blocks/works";
+@import "blocks/example";
+@import "blocks/cooperation";
+@import "blocks/footer";
+@import "blocks/form";
+@import "blocks/radio";
+@import "blocks/cheсkbox";
+@import "blocks/catalog";
+@import "blocks/more";
+@import "blocks/cart-more";

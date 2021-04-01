@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
 
-  <style>
+  <!-- <style>
     html {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -35,12 +37,21 @@
     body {
       opacity: 0.5;
     }
-  </style>
+  </style> -->
 
-  <header class="header">
-    <a class="header__logo" href="">
-      <img src="" alt="Кэт энерджи логотип" width="" height="">
-    </a>
+  <header class="header rullers">
+    <div class="header__wrapper">
+      <a class="header__logo" href="">
+        <img src="img\logo-mobile.svg" alt="Кэт энерджи логотип" width="34" height="38">
+      </a>
+      <a class="header__logo-text" href="">
+        <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
+      </a>
+      <button class="toggle" type="button">
+        <img src="img\x.svg" alt="закрыть" width="20" height="20">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class="menu">
       <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="menu__list">
@@ -62,7 +73,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <!-- <main class="main">
     <h1 class="main__title">Подбор программы</h1>
     <p class="main__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -164,7 +175,7 @@
     </ul>
     <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
     <a href="">logo</a>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

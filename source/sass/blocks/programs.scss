@@ -1,11 +1,12 @@
 .programs__title {
   font-family: $oswald;
-
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
+  margin-left: 19px;
+  margin-top: 7px;
 }
 
 .programs__link {
@@ -16,4 +17,23 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  margin-top: 43px;
+  margin-left: 19px;
+}
+
+.programs__loose,
+.programs__mass {
+  padding-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.programs__img {
+  margin-left: 22px;
+}
+
+.programs__description {
+  margin-top: 17px;
+  margin-left: 20px;
+  margin-right: 17px;
 }

@@ -1,3 +1,10 @@
+.cooperation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 27px;
+}
+
+
 .cooperation__diller {
   font-family: $oswald;
   font-style: normal;

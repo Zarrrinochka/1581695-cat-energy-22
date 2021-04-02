@@ -9,6 +9,10 @@
   margin-top: 7px;
 }
 
+.programs__title--2 {
+  margin-left: 11px;
+}
+
 .programs__link {
   font-family: $oswald;
   font-weight: 400;
@@ -19,17 +23,47 @@
   color: $black;
   margin-top: 43px;
   margin-left: 19px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 240px;
+    height: 1px;
+    background-image: url("/img/line-240px.svg");
+    background-size: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    background-image: url("/img/arrow-ltl.svg");
+    background-size: 100%;
+    left: 100px;
+    top: 1px;
+  }
 }
 
 .programs__loose,
 .programs__mass {
-  padding-top: 45px;
+  margin-top: 22px;
+  padding-top: 23px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 20px;
+  background-color: $quite-white2;
 }
 
 .programs__img {
   margin-left: 22px;
+}
+
+.programs__img--2 {
+  margin-left: 13px;
 }
 
 .programs__description {

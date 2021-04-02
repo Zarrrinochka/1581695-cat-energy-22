@@ -1,7 +1,7 @@
-//.wrapper {}
 .rullers {
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 320px;
 }
 
 .visually-hidden {
@@ -57,7 +57,7 @@
   color: $white;
 }
 
-.text-ordinary__ind {
+.text-ordinary-ind {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

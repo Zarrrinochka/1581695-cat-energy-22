@@ -2,19 +2,22 @@
 @import "common/fonts";
 @import "common/variables";
 @import "common/global";
+@import "common/text";
 //блоки
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/main";
+@import "blocks/main-form.scss";
 @import "blocks/programs";
 @import "blocks/works";
 @import "blocks/example";
+@import "blocks/slider";
 @import "blocks/example-cart";
 @import "blocks/cooperation";
-@import "blocks/footer";
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/cheсkbox";
 @import "blocks/catalog";
 @import "blocks/more";
 @import "blocks/cart-more";
+@import "blocks/footer";

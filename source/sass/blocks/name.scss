@@ -1,0 +1,25 @@
+.name {
+  margin-bottom: 10px;
+}
+
+.name__label {
+  margin-right: 17px;
+  align-self: center;
+}
+
+.name__input {
+  border: 1px solid $grey-for-input;
+  min-height: 45px;
+  padding-left: 12px;
+  flex-grow: 1;
+}
+
+.form__input-text {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $grey;
+}

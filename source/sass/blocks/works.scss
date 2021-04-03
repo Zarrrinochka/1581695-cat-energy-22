@@ -14,10 +14,15 @@
 
 // .works__list {
 // }
-// .text-ordinary__ind {
-// }
-// .works__items {
-// }
+
+.works__items {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey;
+}
 
 .works__items--health,
 .works__items--simple,

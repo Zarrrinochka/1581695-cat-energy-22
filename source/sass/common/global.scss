@@ -61,52 +61,6 @@
   color: $white;
 }
 
-.text-ordinary-ind {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $grey;
-}
-
-.text-ordinary__form {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $grey;
-}
-
-.text-legend {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
-}
-
-.text-catalog {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-transform: uppercase;
-  color: $quite-black2;
-}
-
-.text-cart {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: $grey;
-}
-
 /*Обнуление*/
 * {
   padding: 0;

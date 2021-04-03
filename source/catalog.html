@@ -10,7 +10,7 @@
 
 <body class="body">
 
-  <style>
+  <!-- <style>
     html {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -36,7 +36,7 @@
 
     body {
       opacity: 0.5;
-    }
+    } -->
   </style>
 
   <header class="header rullers">
@@ -73,9 +73,9 @@
   </header>
   <main class="main">
     <section class="catalog">
-      <h1 class="catalog__title main__title">Каталог продукции</h1>
+      <h1 class="text catalog__title">Каталог продукции</h1>
       <div class="cart">
-        <p class="text-catalog">Cat Energy PRO 500 г</p>
+        <p class="catalog__text">Cat Energy PRO 500 г</p>
         <table>
           <tr>
             <td class="text-cart">Масса</td>
@@ -93,7 +93,7 @@
         <button class="button" type="submit">Заказать</button>
       </div>
       <div class="cart">
-        <p class="text-catalog">Cat Energy PRO 1000 г</p>
+        <p class="catalog__text">Cat Energy PRO 1000 г</p>
         <table>
           <tr>
             <td class="text-cart">Масса</td>
@@ -111,7 +111,7 @@
         <button class="button" type="submit">Заказать</button>
       </div>
       <div class="cart">
-        <p class="text-catalog">Cat Energy PRO 500 г</p>
+        <p class="catalog__text">Cat Energy PRO 500 г</p>
         <table>
           <tr>
             <td class="text-cart">Масса</td>
@@ -129,7 +129,7 @@
         <button class="button" type="submit">Заказать</button>
       </div>
       <div class="cart">
-        <p class="text-catalog">Cat Energy PRO 1000 г</p>
+        <p class="catalog__text">Cat Energy PRO 1000 г</p>
         <table>
           <tr>
             <td class="text-cart">Масса</td>
@@ -147,7 +147,7 @@
         <button class="button" type="submit">Заказать</button>
       </div>
       <div class="cart">
-        <p class="text-catalog">Cat Energy slim 500 г</p>
+        <p class="catalog__text">Cat Energy slim 500 г</p>
         <table>
           <tr>
             <td class="text-cart">Масса</td>
@@ -165,7 +165,7 @@
         <button class="button" type="submit">Заказать</button>
       </div>
       <div class="cart">
-        <p class="text-catalog">Cat Energy slim 1000 г</p>
+        <p class="catalog__text">Cat Energy slim 1000 г</p>
         <table>
           <tr>
             <td class="text-cart">Масса</td>
@@ -183,7 +183,7 @@
         <button class="button" type="submit">Заказать</button>
       </div>
       <div class="cart">
-        <p class="text-catalog">Cat Energy slim 500 г</p>
+        <p class="catalog__text">Cat Energy slim 500 г</p>
         <table>
           <tr>
             <td class="text-cart">Масса</td>
@@ -201,7 +201,7 @@
         <button class="button" type="submit">Заказать</button>
       </div>
       <div class="catalog__more-wrapper">
-        <p class="text-catalog">Показать еще 100500 товаров</p>
+        <p class="catalog__text">Показать еще 100500 товаров</p>
         <p class="text-cart">На самом деле вкусов гораздо больше!</p>
         <button class="catalog__see" type="submit">показать все</button>
       </div>
@@ -251,34 +251,48 @@
     </section>
     <p class="stock">Закажите все и получите чехол для кота в подарок!</p>
     <section class="cooperation">
-      <h2 class="cooperation__invite">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div>map</div>
+      <div class="cooperation__block rullers">
+        <h2 class="cooperation__diller">Приглашаем<br>к сотрудничеству дилеров!</h2>
+        <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div>
+        <img src="img/map-mob.jpg" alt="map-mob">
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <a href=""></a>
+    <div class="rullers">
+      <div class="footer__logo">
+        <a href="">
+          <img src="img\logo-text.svg" alt="Кэт энерджи логотип" width="128" height="24">
+        </a>
+      </div>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__link footer__link--vk" href="#">
+            <span class="visually-hidden">Vk</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__link footer__link--inst" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__link footer__link--facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__logo2">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img\logo-text2.svg" alt="Кэт энерджи логотип" width="114" height="18">
+        </a>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img\logo-html.svg" alt="Кэт энерджи логотип" width="27" height="34">
+        </a>
+      </div>
     </div>
-    <ul class="footer__social-list">
-      <li class="footer__social-item">
-        <a class="footer__link footer__link--vk" href="#">
-          <span class="visually-hidden">Vk</span>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__link footer__link--inst" href="#">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__link footer__link--facebook" href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-    <a href="">logo</a>
   </footer>
 </body>
 

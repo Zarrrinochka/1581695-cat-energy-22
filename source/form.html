@@ -10,7 +10,7 @@
 
 <body class="body">
 
-  <!-- <style>
+  <style>
     html {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -37,7 +37,7 @@
     body {
       opacity: 0.5;
     }
-  </style> -->
+  </style>
 
   <header class="header rullers">
     <div class="header__wrapper">
@@ -53,7 +53,6 @@
       </button>
     </div>
     <nav class="menu">
-      <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
           <a class="menu__link" href="index.html">
@@ -73,23 +72,23 @@
       </ul>
     </nav>
   </header>
-  <!-- <main class="main">
-    <h1 class="main__title">Подбор программы</h1>
-    <p class="main__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <main class="main-form rullers">
+    <h1 class="text main-form__title">Подбор программы</h1>
+    <p class="text text--slogan main-form__slogan">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset name">
         <legend class="visually-hidden">Name</legend>
         <p class="form__filed-wrapper">
-          <label class="form__label text-ordinary__form" for="name">Имя:*</label>
-          <input class="form__input form__input-text" id="name" type="text" name="name" value="Барсик">
+          <label class="name__label form__text" for="name">Имя:*</label>
+          <input class="name__input form__input-text" id="name" type="text" name="name" value="Барсик">
         </p>
         <p class="form__filed-wrapper">
-          <label class="form__label text-ordinary__form" for="weight">Вес (кг):*</label>
-          <input class="form__input form__input-text" id="weight" type="text" name="weight" value="7">
+          <label class="name__label form__text" for="weight">Вес (кг):*</label>
+          <input class="name__input form__input-text" id="weight" type="text" name="weight" value="7">
         </p>
         <p class="form__filed-wrapper">
-          <label class="form__label text-ordinary__form" for="age">Возраст (лет):</label>
-          <input class="form__input form__input-text" id="age" type="text" name="age" value="7">
+          <label class="name__label form__text" for="age">Возраст (лет):</label>
+          <input class="name__input form__input-text" id="age" type="text" name="age" value="7">
         </p>
       </fieldset>
       <fieldset class="form__fieldset radio">
@@ -107,39 +106,39 @@
           <label class="radio__label" for="dontknow">Не знаю (нужен ваш совет)</label>
         </p>
       </fieldset>
-      <fieldset class="form__contacts contacts">
-        <legend class="text-legend">Контактные данные (владельца кота)</legend>
+      <fieldset class="form__fieldset form__contacts contacts">
+        <legend class="text text--legend">Контактные данные (владельца кота)</legend>
         <p class="contacts__item">
-          <label class="text-ordinary__form" for="email">E-mail:*</label>
-          <input class="text-ordinary__form" id="email" type="text" name="email" value="kuklachev@gmail.com">
+          <label class="form__text" for="email">E-mail:*</label>
+          <input class="form__text" id="email" type="text" name="email" value="kuklachev@gmail.com">
         </p>
         <p class="contacts__item">
-          <label class="text-ordinary__form" for="tel">Телефон</label>
-          <input class="text-ordinary__form" id="tel" type="text" name="tel" value="8 (960) 900-60-90">
+          <label class="form__text" for="tel">Телефон</label>
+          <input class="form__text" id="tel" type="text" name="tel" value="8 (960) 900-60-90">
         </p>
       </fieldset>
-      <fieldset class="form__comments">
-        <legend class="text-legend">Комментарий</legend>
+      <fieldset class="form__fieldset form__comments">
+        <legend class="text text--legend">Комментарий</legend>
         <label class="visually-hidden">comments</label>
-        <textarea class="text-ordinary__form" name="comment" id="comment-field"
+        <textarea class="form__text" name="comment" id="comment-field"
           rows="6">Расскажите обо всех повадках кота</textarea>
       </fieldset>
-      <fieldset class="form__moreinf">
-        <legend class="form__legend text-legend">Дополнительно</legend>
-        <p class="checkbox">
-          <input class="cheсkbox__input visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+      <fieldset class="form__fieldset form__moreinf">
+        <legend class="form__legend text text--legend">Дополнительно</legend>
+        <p class="cheсkbox">
+          <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
           <label class="cheсkbox__label" for="sugar">Сахарозаменитель</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox__input visually-hidden" type="checkbox" name="water" id="water">
+          <input class="visually-hidden" type="checkbox" name="water" id="water">
           <label class="cheсkbox__label" for="water">Питьевая вода</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox__input visually-hidden" type="checkbox" name="milk" id="milk">
+          <input class="visually-hidden" type="checkbox" name="milk" id="milk">
           <label class="cheсkbox__label" for="milk">Молоко</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox__input visually-hidden" type="checkbox" name="vita" id="vita">
+          <input class="visually-hidden" type="checkbox" name="vita" id="vita">
           <label class="cheсkbox__label" for="vita">Витамины</label>
         </p>
       </fieldset>
@@ -153,29 +152,39 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <a href=""></a>
+    <div class="rullers">
+      <div class="footer__logo">
+        <a href="">
+          <img src="img\logo-text.svg" alt="Кэт энерджи логотип" width="128" height="24">
+        </a>
+      </div>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__link footer__link--vk" href="#">
+            <span class="visually-hidden">Vk</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__link footer__link--inst" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__link footer__link--facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__logo2">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img\logo-text2.svg" alt="Кэт энерджи логотип" width="114" height="18">
+        </a>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img\logo-html.svg" alt="Кэт энерджи логотип" width="27" height="34">
+        </a>
+      </div>
     </div>
-    <ul class="footer__social-list">
-      <li class="footer__social-item">
-        <a class="footer__link footer__link--vk" href="#">
-          <span class="visually-hidden">Vk</span>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__link footer__link--inst" href="#">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__link footer__link--facebook" href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-    <a href="">logo</a>
-  </footer> -->
+  </footer>
 </body>
 
 </html>

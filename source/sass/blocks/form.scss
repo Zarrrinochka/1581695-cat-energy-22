@@ -1,3 +1,25 @@
+// .form {
+// }
+
+.form__text {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey;
+}
+
+
+.form__filed-wrapper {
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.form__fieldset {
+  display: block;
+}
+
 .form__input-text {
   font-family: $oswald;
   font-weight: 400;
@@ -7,3 +29,6 @@
   text-transform: uppercase;
   color: $grey;
 }
+
+// .form__contacts {
+// }

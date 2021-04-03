@@ -16,6 +16,15 @@
   margin-top: 33px;
 }
 
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
 .example__money {
   font-family: $oswald;
   font-weight: normal;
@@ -35,23 +44,4 @@
 .example__slider {
   display: flex;
   flex-wrap: nowrap;
-}
-
-.example__img-slider {
-  transform: translateY(3px);
-  margin-left: 17px;
-  margin-right: 18px;
-}
-
-.example__b-a {
-  font-family: $oswald;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $black;
-}
-
-.example__before {
-  margin-left: 44px;
 }

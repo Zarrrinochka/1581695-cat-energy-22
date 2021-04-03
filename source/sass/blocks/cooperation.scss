@@ -1,7 +1,11 @@
 .cooperation {
+  padding-top: 27px;
+}
+
+.cooperation__block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 27px;
+  margin-bottom: 26px;
 }
 
 

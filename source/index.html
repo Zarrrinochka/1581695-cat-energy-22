@@ -10,7 +10,7 @@
 
 <body class="body">
 
-  <!-- <style>
+  <style>
     html {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -37,7 +37,7 @@
     body {
       opacity: 0.5;
     }
-  </style> -->
+  </style>
 
   <header class="header rullers">
     <div class="header__wrapper">
@@ -73,68 +73,81 @@
     </nav>
   </header>
 
-  <!-- <main class="main">
-    <h1 class="main__title">Функциональное питание для котов</h1>
-    <p class="main__slogan">Занялся собой? Займись котом!</p>
-    <button class="button" type="submit"></button>
-    <section class="programs">
+  <main class="main">
+    <div class="main__slogan-wrapper">
+      <h1 class="main__title rullers">Функциональное питание для котов</h1>
+      <p class="main__slogan rullers">Занялся собой? Займись котом!</p>
+    </div>
+    <button class="button rullers" type="submit">Подобрать программу</button>
+    <section class="programs rullers">
       <h2 class="visually-hidden">Набрать массу или похудеть?</h2>
-      <div class="wrapper programs__loose">
+      <div class="programs__loose">
+        <div class="programs__img"><img src="img/cat-sit.svg" alt="cat-sit"></div>
         <h3 class="programs__title">Похудение</h3>
-        <p class="programs__description text-ordinary__ind"> Ваш кот весит больше собаки и почти утратил способность
+        <p class="programs__description text-ordinary-ind"> Ваш кот весит больше собаки и почти утратил способность
           лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
         <a class="programs__link" href="">Каталог slim</a>
       </div>
-      <div class="wrapper programs__mass">
-        <h3 class="programs__title">Набор массы</h3>
-        <p class="programs__description text-ordinary__ind">Заработать авторитет среди дворовых котов и даже собак?
+      <div class="programs__mass">
+        <div class="programs__img programs__img--2"><img src="img/cat.svg" alt="cat-sit"></div>
+        <h3 class="programs__title programs__title--2">Набор массы</h3>
+        <p class="programs__description text-ordinary-ind">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="programs__link" href="">Каталог pro</a>
       </div>
     </section>
-    <section class="works">
+    <section class="works rullers">
       <h2 class="works__title">Как это работает</h2>
       <ul class="works__list">
-        <li class="text-ordinary__ind works__items works__items--health">Функциональное питание содержит только полезные
+        <li class="text-ordinary-ind works__items works__items--health">Функциональное питание содержит только полезные
           питательные вещества.
         </li>
-        <li class="text-ordinary__ind works__items works__items--simple">Выпускается в виде порошка, который нужно лишь
+        <li class="text-ordinary-ind works__items works__items--simple">Выпускается в виде порошка, который нужно лишь
           залить кипятком и готово.
         </li>
-        <li class="text-ordinary__ind works__items works__items--exchange">Замените один-два приема обычной еды на наше
+        <li class="text-ordinary-ind works__items works__items--exchange">Замените один-два приема обычной еды на наше
           функциональное питание.
         </li>
-        <li class="text-ordinary__ind works__items works__items--mounth">Уже через месяц наслаждайтесь изменениями к
+        <li class="text-ordinary-ind works__items works__items--mounth">Уже через месяц наслаждайтесь изменениями к
           лучшему вашего питомца!
         </li>
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="text-ordinary__ind example__result"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-        Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-        спит по 16 часов в день.
-      </p>
-      <div class="example-cart">
-        <p class="example-cart__number"> 5 КГ</p>
-        <p class="example-cart__text">Снижение веса</p>
+      <div class="rullers">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="text-ordinary-ind example__result">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+          на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+          по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example-cart">
+          <div class="example-cart__block">
+            <p class="example-cart__number"> 5 КГ</p>
+            <p class="example-cart__text">снижение<br> веса</p>
+          </div>
+          <div class="example-cart__block">
+            <p class="example-cart__number">60 ДНЕЙ</p>
+            <p class="example-cart__text example-cart__text--2">затрачено<br> времени</p>
+          </div>
+        </div>
+        <p class="example__money">Затраты на питание: 15 000 РУБ. </p>
       </div>
-      <div class="example-cart">
-        <p class="example-cart__number">60 ДНЕЙ</p>
-        <p class="example-cart__text">Затрачено времени</p>
+      <div class="example__img"><img src="img/cat-fat.png" alt="fat cat"></div>
+      <div class="example__slider rullers">
+        <span class="example__b-a example__before">было</span>
+        <div class="example__img-slider"><img src="img/slider.svg" alt="fat cat"></div>
+        <span class="example__b-a example__after">стало</span>
       </div>
-      <p class="example__money">Затраты на питание: 15 000 РУБ. </p>
-      <p class="example__b-a example__before">было</p>
-      <p class="example__b-a example__after">стало</p>
     </section>
-    <section class="cooperation">
-      <h2 class="cooperation__diller">Приглашаем к сотрудничеству дилеров!</h2>
+    <section class="cooperation rullers">
+      <h2 class="cooperation__diller">Приглашаем<br>к сотрудничеству дилеров!</h2>
       <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div>map</div>
     </section>
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__logo">
       <a href=""></a>
     </div>

@@ -1,15 +1,39 @@
+.main__slogan-wrapper {
+  background-image: url("../../img/index-background-desktop.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 290px;
+  position: relative;
+
+  &::after {
+    content: url("../../img/index-can-mobile.png");
+    position: absolute;
+    display: block;
+    width: 260px;
+    height: 240px;
+    bottom: 30px;
+    left: 20px;
+  }
+}
+
 .main__title {
   font-family: $oswald;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: $white;
+  padding-top: 27px;
+  padding-bottom: 10px;
 }
 
 .main__slogan {
   font-family: $oswald;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: $white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
 }

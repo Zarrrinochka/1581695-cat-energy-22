@@ -11,11 +11,15 @@
   position: relative;
 
   &::after {
-    content: url("/source/img/line.svg");
+    content: "";
     position: absolute;
+    //background-image: url("/source/img/line.svg");
+    display: block;
     bottom: 0;
-    width: 100%;
+    right: -20px;
+    width: 320px;
     height: 1px;
+    background-color: $light-grey;
   }
 }
 

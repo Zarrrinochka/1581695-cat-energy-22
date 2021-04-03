@@ -1,8 +1,47 @@
+.works {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 .works__title {
   font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: $black;
+  margin-bottom: 38px;
+}
+
+// .works__list {
+// }
+// .text-ordinary__ind {
+// }
+// .works__items {
+// }
+
+.works__items--health,
+.works__items--simple,
+.works__items--exchange,
+.works__items--mounth {
+  background-repeat: no-repeat;
+  padding-left: 80px;
+  margin-bottom: 24px;
+  padding-top: 2px;
+}
+
+.works__items--health {
+  background-image: url("/img/list.svg");
+  padding-top: 2px;
+}
+
+.works__items--simple {
+  background-image: url("/img/water.svg");
+}
+
+.works__items--exchange {
+  background-image: url("/img/knife.svg");
+}
+
+.works__items--mounth {
+  background-image: url("/img/clock.svg");
 }

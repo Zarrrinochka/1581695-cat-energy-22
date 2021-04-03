@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
@@ -37,14 +39,19 @@
     }
   </style>
 
-  <header class="header">
-    <a class="header__logo" href="">
-      <img src="" alt="Кэт энерджи логотип" width="" height="">
-    </a>
-    <!-- <div>logo</div>
-    <div>logo</div> -->
+  <header class="header rullers">
+    <div class="header__wrapper"> <a class="header__logo" href="">
+        <img src="img\logo-mobile.svg" alt="Кэт энерджи логотип" width="34" height="38">
+      </a>
+      <a class="header__logo-text" href="">
+        <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
+      </a>
+      <button class="toggle" type="button">
+        <img src="img\x.svg" alt="закрыть" width="20" height="20">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class="menu">
-      <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
           <a class="menu__link" href="index.html">

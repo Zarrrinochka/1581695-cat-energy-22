@@ -5,6 +5,15 @@
   padding-top: 35px;
 }
 
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 .footer__logo {
   position: relative;
 
@@ -17,6 +26,10 @@
     width: 280px;
     height: 1px;
     background-image: url("/img/line.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -80,5 +93,9 @@
     width: 280px;
     height: 1px;
     background-image: url("/img/line.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

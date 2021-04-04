@@ -1,13 +1,25 @@
 .cooperation {
   padding-top: 27px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 0;
+  }
 }
 
 .cooperation__block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 26px;
-}
 
+  @media (min-width: $desktop-width) {
+    width: 35%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $white;
+  }
+}
 
 .cooperation__diller {
   font-family: $oswald;
@@ -17,6 +29,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $quite-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__adress {
@@ -26,4 +43,9 @@
   font-size: 14px;
   line-height: 20px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

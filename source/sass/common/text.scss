@@ -1,9 +1,13 @@
-
 .text {
   font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .text--slogan {
@@ -11,6 +15,10 @@
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .text--legend {

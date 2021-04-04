@@ -1,11 +1,5 @@
 .header__wrapper {
   display: flex;
-  // var1
-  // justify-content: space-between;
-  // align-items: center;
-  // padding-top: 12px;
-  // padding-bottom: 10px;
-  // var2
   min-height: 66px;
   align-items: center;
   position: relative;
@@ -13,13 +7,22 @@
   &::after {
     content: "";
     position: absolute;
-    //background-image: url("/source/img/line.svg");
     display: block;
     bottom: 0;
     right: -20px;
     width: 320px;
     height: 1px;
     background-color: $light-grey;
+  }
+}
+
+.header__big-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
 

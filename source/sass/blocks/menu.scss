@@ -1,14 +1,24 @@
-// .menu {
-//   background-image: url("/img/index-background-desktop.jpg");
-// }
-
-// .menu__toggle {
-// }
-
 .menu__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/green-back-desk.jpg");
+      width: 720px;
+      height: 625px;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 
 .menu__item {
@@ -17,6 +27,10 @@
   width: 100%;
   text-align: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 
   &::before {
     content: "";
@@ -27,11 +41,12 @@
     height: 1px;
     background-image: url("/img/line.svg");
     background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
-
-// .menu__item--current {
-// }
 
 .menu__link {
   font-family: $oswald;
@@ -42,4 +57,15 @@
   color: $black;
   padding-left: 7px;
   padding-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+  }
 }

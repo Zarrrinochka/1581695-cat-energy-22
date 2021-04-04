@@ -12,4 +12,8 @@
 .main-form__slogan {
   margin-bottom: 58px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
 }

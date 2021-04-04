@@ -40,37 +40,39 @@
   </style> -->
 
   <header class="header rulers">
-    <div class="header__wrapper">
-      <a class="header__logo" target="_blank" href="index.html">
-        <img src="img\logo-mobile.svg" alt="Кэт энерджи логотип" width="34" height="38">
-      </a>
-      <a class="header__logo-text" target="_blank" href="index.html">
-        <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
-      </a>
-      <button class="toggle" type="button">
-        <img src="img\x.svg" alt="закрыть" width="20" height="20">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="header__big-wrapper">
+      <div class="header__wrapper">
+        <a class="header__logo" target="_blank" href="index.html">
+          <img src="img\logo-mobile.svg" alt="Кэт энерджи логотип" width="34" height="38">
+        </a>
+        <a class="header__logo-text" target="_blank" href="index.html">
+          <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
+        </a>
+        <button class="toggle" type="button">
+          <img src="img\x.svg" alt="закрыть" width="20" height="20">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" target="_blank" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" target="_blank" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="menu__item  menu__item--current">
+            <a class="menu__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" target="_blank" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" target="_blank" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="menu__item  menu__item--current">
-          <a class="menu__link" href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="main-form rulers">
     <h1 class="text main-form__title">Подбор программы</h1>
@@ -125,34 +127,42 @@
       </fieldset>
       <fieldset class="form__fieldset form__moreinf">
         <legend class="form__legend text text--legend">Дополнительно</legend>
-        <p class="cheсkbox">
-          <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
-          <label class="cheсkbox__label" for="sugar">Сахарозаменитель</label>
-        </p>
-        <p class="checkbox">
-          <input class="visually-hidden" type="checkbox" name="water" id="water">
-          <label class="cheсkbox__label" for="water">Питьевая вода</label>
-        </p>
-        <p class="checkbox">
-          <input class="visually-hidden" type="checkbox" name="milk" id="milk">
-          <label class="cheсkbox__label" for="milk">Молоко</label>
-        </p>
-        <p class="checkbox">
-          <input class="visually-hidden" type="checkbox" name="vita" id="vita">
-          <label class="cheсkbox__label" for="vita">Витамины</label>
-        </p>
+        <div class="form__checkbox">
+          <p class="cheсkbox">
+            <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+            <label class="cheсkbox__label" for="sugar">Сахарозаменитель</label>
+          </p>
+          <p class="checkbox">
+            <input class="visually-hidden" type="checkbox" name="water" id="water">
+            <label class="cheсkbox__label" for="water">Питьевая вода</label>
+          </p>
+          <p class="checkbox">
+            <input class="visually-hidden" type="checkbox" name="milk" id="milk">
+            <label class="cheсkbox__label" for="milk">Молоко</label>
+          </p>
+          <p class="checkbox">
+            <input class="visually-hidden" type="checkbox" name="vita" id="vita">
+            <label class="cheсkbox__label" for="vita">Витамины</label>
+          </p>
+        </div>
       </fieldset>
-      <p><button class="form__send button" type="submit">Отправить заявку</button></p>
+      <div class="form__footer">
+        <button class="form__send button" type="submit">Отправить заявку</button>
+        <p class="necessary">* — Обязательные поля</p>
+      </div>
     </form>
-    <p class="nessesary">* — Обязательные поля</p>
-    <section class="cooperation">
-      <h2 class="cooperation__diller">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div>map</div>
+    <section class="cooperation cooperation--color">
+      <div class="rulers cooperation__block">
+        <h2 class="cooperation__diller">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div>
+        <img src="img/map-mob.jpg" alt="map-mob">
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="rulers">
+    <div class="rulers footer__wrapper">
       <div class="footer__logo">
         <a href="#">
           <img src="img\logo-text.svg" alt="Кэт энерджи логотип" width="128" height="24">

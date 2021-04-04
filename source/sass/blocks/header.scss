@@ -13,6 +13,10 @@
     width: 320px;
     height: 1px;
     background-color: $light-grey;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 

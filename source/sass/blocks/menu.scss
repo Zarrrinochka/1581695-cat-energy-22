@@ -2,11 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
   }
+}
+
+.menu--index {
+  position: relative;
 
   &::before {
     @media (min-width: $desktop-width) {
@@ -66,6 +69,11 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.menu__link--index {
+  @media (min-width: $desktop-width) {
     color: $white;
   }
 }

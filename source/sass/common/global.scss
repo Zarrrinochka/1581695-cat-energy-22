@@ -61,10 +61,15 @@
   color: $white;
   padding-top: 13px;
   padding-bottom: 10px;
-  width: 280px;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.nessesary {
+.necessary {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -73,6 +78,10 @@
   align-items: center;
   text-align: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .stock {
@@ -81,9 +90,19 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
   text-align: center;
   color: $white;
+  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: $green;
+  padding-top: 200px;
+  padding-bottom: 50px;
+
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 65%;
+  }
 }
 
 /*Обнуление*/

@@ -1,3 +1,9 @@
+.checkbox {
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
+}
+
 .cheсkbox__label {
   font-family: $oswald;
   font-weight: 400;
@@ -6,4 +12,9 @@
   align-items: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

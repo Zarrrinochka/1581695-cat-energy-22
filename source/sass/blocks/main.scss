@@ -4,6 +4,11 @@
   padding-bottom: 300px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    padding-bottom: 50px;
+  }
+
   &::after {
     content: url("../../img/index-can-mobile.png");
     position: absolute;
@@ -12,6 +17,15 @@
     height: 240px;
     bottom: 30px;
     left: 20px;
+
+    @media (min-width: $tablet-width) {
+      bottom: -60px;
+      left: 300px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+    }
   }
 }
 
@@ -19,8 +33,12 @@
 .main__slogan {
   color: $white;
   text-align: center;
-}
 
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    color: $black;
+  }
+}
 
 .main__title {
   padding-top: 27px;
@@ -29,4 +47,8 @@
 
 .main__slogan {
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+  }
 }

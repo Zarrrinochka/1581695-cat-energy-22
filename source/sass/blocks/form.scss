@@ -1,6 +1,3 @@
-// .form {
-// }
-
 .form__text {
   font-family: $oswald;
   font-weight: 400;
@@ -8,8 +5,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $grey;
-}
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 40%;
+  }
+}
 
 .form__filed-wrapper {
   margin-bottom: 14px;
@@ -28,7 +30,25 @@
   align-items: center;
   text-transform: uppercase;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-// .form__contacts {
-// }
+.form__checkbox {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

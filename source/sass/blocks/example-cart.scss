@@ -3,7 +3,14 @@
   flex-wrap: nowrap;
   padding-top: 39px;
   padding-bottom: 19px;
-  // justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    min-width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .example-cart__number {
@@ -13,6 +20,11 @@
   line-height: 24px;
   padding-left: 43px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-cart__block {
@@ -32,6 +44,11 @@
   padding-left: 33px;
   padding-top: 9px;
   width: min-content;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 
   &::before {
     content: "";

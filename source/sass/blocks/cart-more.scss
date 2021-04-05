@@ -1,10 +1,21 @@
+.cart-more {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .cart-more__item {
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  align-items: center;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: $quite-black2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

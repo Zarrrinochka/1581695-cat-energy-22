@@ -2,6 +2,15 @@
   background-color: $quite-white;
   padding-top: 28px;
   padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .example__title {
@@ -10,10 +19,55 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+.example__big-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: $quite-white;
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $quite-white;
+  }
+}
+
+.example__bottom {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .example__result {
   margin-top: 33px;
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
 }
 
 .example__text {
@@ -23,6 +77,11 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__money {
@@ -33,12 +92,19 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .example__img {
   margin-top: 42px;
   margin-bottom: 28px;
-  padding-left: 6px;
 }
 
 .example__slider {

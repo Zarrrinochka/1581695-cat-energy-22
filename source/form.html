@@ -74,23 +74,23 @@
       </nav>
     </div>
   </header>
-  <main class="main-form rulers">
-    <h1 class="text main-form__title">Подбор программы</h1>
-    <p class="text text--slogan main-form__slogan">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-    <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
+  <main class="main-form">
+    <h1 class="text main-form__title rulers">Подбор программы</h1>
+    <p class="text text--slogan main-form__slogan rulers">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+    <form class="form rulers" action="https://echo.htmlacademy.ru/courses" method="post">
       <fieldset class="form__fieldset name">
         <legend class="visually-hidden">Name</legend>
         <p class="form__filed-wrapper">
           <label class="name__label form__text" for="name">Имя:*</label>
-          <input class="name__input form__input-text" id="name" type="text" name="name" value="Барсик">
+          <input class="name__input form__input-text" id="name" type="text" name="name" placeholder="Барсик">
         </p>
         <p class="form__filed-wrapper">
           <label class="name__label form__text" for="weight">Вес (кг):*</label>
-          <input class="name__input form__input-text" id="weight" type="text" name="weight" value="7">
+          <input class="name__input form__input-text" id="weight" type="text" name="weight" placeholder="7">
         </p>
         <p class="form__filed-wrapper">
           <label class="name__label form__text" for="age">Возраст (лет):</label>
-          <input class="name__input form__input-text" id="age" type="text" name="age" value="7">
+          <input class="name__input form__input-text" id="age" type="text" name="age" placeholder="7">
         </p>
       </fieldset>
       <fieldset class="form__fieldset radio">
@@ -112,18 +112,17 @@
         <legend class="text text--legend">Контактные данные (владельца кота)</legend>
         <p class="contacts__item">
           <label class="form__text" for="email">E-mail:*</label>
-          <input class="form__text" id="email" type="text" name="email" value="kuklachev@gmail.com">
+          <input class="contacts__input form__text" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
         </p>
         <p class="contacts__item">
           <label class="form__text" for="tel">Телефон</label>
-          <input class="form__text" id="tel" type="text" name="tel" value="8 (960) 900-60-90">
+          <input class="form__text contacts__input" id="tel" type="text" name="tel" placeholder="8 (960) 900-60-90">
         </p>
       </fieldset>
       <fieldset class="form__fieldset form__comments">
         <legend class="text text--legend">Комментарий</legend>
         <label class="visually-hidden">comments</label>
-        <textarea class="form__text" name="comment" id="comment-field"
-          rows="6">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__text contacts__input" name="comment" id="comment-field" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset form__moreinf">
         <legend class="form__legend text text--legend">Дополнительно</legend>

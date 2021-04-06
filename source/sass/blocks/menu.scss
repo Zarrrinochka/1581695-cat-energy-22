@@ -5,6 +5,9 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
+    min-width: 480px;
+    padding-left: 27px;
+    justify-content: start;
   }
 }
 
@@ -33,6 +36,15 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding-top: 42px;
+
+    &:first-child {
+      margin-right: 34px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 37px;
+    }
   }
 
   &::before {
@@ -62,8 +74,10 @@
   padding-right: 7px;
 
   @media (min-width: $tablet-width) {
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {

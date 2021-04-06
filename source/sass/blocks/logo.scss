@@ -1,0 +1,32 @@
+.logo,
+.logo__lilcircle {
+  display: block;
+}
+
+
+.logo__circle,
+.logo__wings,
+.logo__flash,
+.logo__shorts {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+
+.logo__circle,
+.logo__wings,
+.logo__flash,
+.logo__shorts,
+.logo__sparks {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+
+.logo__mob {
+  transform: translateX(-20px) translateY(-4px);
+}

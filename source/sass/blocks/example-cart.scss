@@ -6,6 +6,8 @@
 
   @media (min-width: $tablet-width) {
     min-width: 60%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +26,8 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -48,6 +52,8 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    margin: 0;
+    padding: 0;
   }
 
   &::before {
@@ -68,5 +74,10 @@
 
   &::before {
     left: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
   }
 }

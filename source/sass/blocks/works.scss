@@ -1,6 +1,11 @@
 .works {
   padding-top: 30px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+    padding-bottom: 103px;
+  }
 }
 
 .works__title {
@@ -9,11 +14,12 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 184px;
   }
 }
 
@@ -39,7 +45,15 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 50%;
+    width: 35%;
+
+    &:nth-child(odd) {
+      margin-right: 135px;
+    }
+
+    &:nth-child(-n+2) {
+      margin-bottom: 244px;
+    }
   }
 }
 
@@ -51,11 +65,21 @@
   padding-left: 80px;
   margin-bottom: 24px;
   padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .works__items--health {
   background-image: url("/img/list.svg");
   padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .works__items--simple {

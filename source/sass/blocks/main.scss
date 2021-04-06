@@ -1,12 +1,35 @@
-.main__slogan-wrapper {
+.main {
   background-image: url("../../img/index-background-desktop.jpg");
   background-repeat: no-repeat;
-  padding-bottom: 300px;
   position: relative;
+  background-position-x: center;
+  background-position-y: top;
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    padding-bottom: 50px;
+  }
+}
+
+.main__top {
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+    padding-bottom: 526px;
+  }
+}
+
+.main__slogan-wrapper {
+  background-image: url("../../img/index-background-desktop.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position-x: center;
+  background-position-y: top;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    padding-top: 26px;
+    margin-bottom: 48px;
   }
 
   &::after {
@@ -16,7 +39,7 @@
     width: 260px;
     height: 240px;
     bottom: 30px;
-    left: 20px;
+    top: 167px;
 
     @media (min-width: $tablet-width) {
       bottom: -60px;
@@ -43,12 +66,18 @@
 .main__title {
   padding-top: 27px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .main__slogan {
   line-height: 14px;
+  margin-bottom: 301px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     line-height: 20px;
   }
 }

@@ -5,13 +5,26 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    min-width: 60%;
-    padding-top: 0;
+    padding-top: 18px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
+  }
+}
+
+.example-cart__block {
+  z-index: 1;
+  min-width: 48%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    text-align: center;
+
+    &:first-child {
+      margin-right: 41px;
+    }
   }
 }
 
@@ -26,14 +39,9 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    margin: 0;
     padding: 0;
+    margin-bottom: 11px;
   }
-}
-
-.example-cart__block {
-  z-index: 1;
-  width: 48%;
 }
 
 .example-cart__text {
@@ -47,13 +55,12 @@
   position: relative;
   padding-left: 33px;
   padding-top: 9px;
-  width: min-content;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    margin: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
   }
 
   &::before {
@@ -66,6 +73,12 @@
     background-image: url("/img/line-around.svg");
     background-size: 100%;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: -64px;
+      width: 162px;
+      height: 73px;
+    }
   }
 }
 
@@ -74,10 +87,13 @@
 
   &::before {
     left: 22px;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
+    padding-left: 0;
   }
 }

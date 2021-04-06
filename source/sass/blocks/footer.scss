@@ -2,7 +2,7 @@
   background-color: $quite-white2;
   height: 240px;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 7px;
 }
 
 .footer__wrapper {
@@ -45,6 +45,11 @@
   display: block;
   width: 24px;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .footer__social-item:nth-child(2) {

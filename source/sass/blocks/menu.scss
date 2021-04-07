@@ -9,6 +9,10 @@
     padding-left: 27px;
     justify-content: start;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+  }
 }
 
 .menu--index {
@@ -20,8 +24,8 @@
       content: "";
       background-image: url("../../img/green-back-desk.jpg");
       width: 720px;
-      height: 625px;
-      right: 0;
+      height: 693px;
+      right: -112px;
       top: 0;
     }
   }

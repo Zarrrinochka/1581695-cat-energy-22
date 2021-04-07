@@ -6,6 +6,11 @@
     padding-top: 46px;
     padding-bottom: 103px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    padding-bottom: 70px;
+  }
 }
 
 .works__title {
@@ -20,6 +25,10 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 184px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
   }
 }
 
@@ -46,13 +55,35 @@
     font-size: 16px;
     line-height: 24px;
     width: 35%;
+  }
 
-    &:nth-child(odd) {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $tablet-width) {
       margin-right: 135px;
     }
 
-    &:nth-child(-n+2) {
+    @media (min-width: $desktop-width) {
+      margin-right: 40px;
+    }
+  }
+
+  &:nth-child(-n + 2) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 244px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(-n + 3) {
+    @media (min-width: $desktop-width) {
+      margin-right: 76px;
     }
   }
 }

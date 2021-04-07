@@ -17,6 +17,11 @@
     padding-left: 87px;
     padding-bottom: 526px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-bottom: 184px;
+  }
 }
 
 .main__slogan-wrapper {
@@ -30,6 +35,11 @@
     background-image: none;
     padding-top: 26px;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    margin-bottom: 53px;
   }
 
   &::after {

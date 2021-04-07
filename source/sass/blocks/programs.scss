@@ -78,6 +78,15 @@
     background-image: url("/img/cat-sit.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/img/cat-back-tab.svg");
+      width: 200px;
+      height: 211px;
+      left: auto;
+      right: 62px;
+      top: 3px;
+    }
   }
 }
 
@@ -94,6 +103,15 @@
     background-image: url("/img/cat.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 200px;
+      background-image: url("/img/cat-go-tablet.svg");
+      top: 15px;
+      right: 29px;
+      left: auto;
+    }
   }
 }
 

@@ -12,6 +12,10 @@
     padding-top: 54px;
     padding-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+  }
 }
 
 .footer__logo {
@@ -20,6 +24,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 6px;
     margin-right: 157px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 413px;
   }
 
   &::after {
@@ -49,6 +57,10 @@
     justify-content: start;
     align-items: center;
     margin-right: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 388px;
   }
 }
 

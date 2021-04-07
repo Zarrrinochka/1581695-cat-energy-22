@@ -6,6 +6,11 @@
     padding-top: 46px;
     padding-bottom: 103px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    padding-bottom: 70px;
+  }
 }
 
 .works__title {
@@ -19,7 +24,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 184px;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
   }
 }
 
@@ -41,18 +50,42 @@
   font-size: 14px;
   line-height: 18px;
   color: $grey;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     width: 35%;
+    padding-top: 112px;
+  }
 
-    &:nth-child(odd) {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $tablet-width) {
       margin-right: 135px;
     }
 
-    &:nth-child(-n+2) {
-      margin-bottom: 244px;
+    @media (min-width: $desktop-width) {
+      margin-right: 40px;
+    }
+  }
+
+  &:nth-child(-n + 2) {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 133px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(-n + 3) {
+    @media (min-width: $desktop-width) {
+      margin-right: 76px;
     }
   }
 }
@@ -64,22 +97,19 @@
   background-repeat: no-repeat;
   padding-left: 80px;
   margin-bottom: 24px;
-  padding-top: 2px;
+  //padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-size: 33%;
   }
 }
 
 .works__items--health {
   background-image: url("/img/list.svg");
-  padding-top: 2px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 .works__items--simple {

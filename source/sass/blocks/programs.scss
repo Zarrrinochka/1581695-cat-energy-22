@@ -8,7 +8,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: 350px;
+    padding-top: 80px;
   }
 }
 
@@ -17,6 +17,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -36,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 45%;
+    width: 47%;
   }
 }
 
@@ -55,6 +59,10 @@
     line-height: 36px;
     margin-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+  }
 }
 
 .programs__title--loose {
@@ -70,6 +78,15 @@
     background-image: url("/img/cat-sit.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/img/cat-back-tab.svg");
+      width: 200px;
+      height: 211px;
+      left: auto;
+      right: 62px;
+      top: 3px;
+    }
   }
 }
 
@@ -86,6 +103,15 @@
     background-image: url("/img/cat.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 200px;
+      background-image: url("/img/cat-go-tablet.svg");
+      top: 15px;
+      right: 29px;
+      left: auto;
+    }
   }
 }
 
@@ -106,6 +132,11 @@
     margin-top: 25px;
     margin-bottom: 52px;
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
+    margin-bottom: 28px;
   }
 }
 

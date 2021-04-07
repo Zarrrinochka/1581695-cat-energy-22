@@ -1,21 +1,34 @@
 .footer {
   background-color: $quite-white2;
-  height: 240px;
   text-align: center;
-  padding-top: 7px;
 }
 
 .footer__wrapper {
+  padding-top: 35px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: space-between;
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
   }
 }
 
 .footer__logo {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    margin-right: 157px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 413px;
+  }
 
   &::after {
     content: "";
@@ -37,57 +50,66 @@
   display: flex;
   margin-top: 47px;
   justify-content: center;
-}
-
-.footer__social-item,
-.footer__link::before,
-.footer__link {
-  display: block;
-  width: 24px;
-  height: 24px;
+  align-items: baseline;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    justify-content: start;
+    align-items: center;
+    margin-right: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 388px;
+  }
+}
+
+.footer__link--vk img {
+  @media (min-width: $tablet-width) {
     width: 30px;
-    height: 30px;
+    height: 27px;
+  }
+}
+
+.footer__link--inst img {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 24px;
+  }
+}
+
+.footer__link--facebook img {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.footer__social-item:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
   }
 }
 
 .footer__social-item:nth-child(2) {
-  margin: 0 29px;
-}
+  margin: 0 32px;
 
-.footer__link {
-  position: relative;
-}
-
-.footer__link::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.footer__link--vk::before {
-  background-image: url("/img/icon_vkontakte.svg");
-}
-
-.footer__link--inst::before {
-  background-image: url("/img/icon_instagram.svg");
-}
-
-.footer__link--facebook::before {
-  background-image: url("/img/icon_facebook.svg");
+  @media (min-width: $tablet-width) {
+    margin: 0 17px 0 0;
+  }
 }
 
 .footer__logo2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 42px;
+  margin-top: 40px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    min-width: 163px;
+  }
 
   &::after {
     content: "";

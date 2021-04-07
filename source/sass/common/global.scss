@@ -14,9 +14,35 @@
   }
 }
 
+.br-for-mob {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .mob {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.br-for-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.br-for-tablet-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -24,6 +50,22 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.br-for-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }

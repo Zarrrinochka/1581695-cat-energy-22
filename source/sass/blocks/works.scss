@@ -61,6 +61,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding-top: 113px;
   }
 
   &:nth-child(odd) {
@@ -109,17 +110,17 @@
 }
 
 .works__items--health {
-  background-image: url("/img/list.svg");
+  background-image: url("../img/list.svg");
 }
 
 .works__items--simple {
-  background-image: url("/img/water.svg");
+  background-image: url("../img/water.svg");
 }
 
 .works__items--exchange {
-  background-image: url("/img/knife.svg");
+  background-image: url("../img/knife.svg");
 }
 
 .works__items--mounth {
-  background-image: url("/img/clock.svg");
+  background-image: url("../img/clock.svg");
 }

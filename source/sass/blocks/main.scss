@@ -1,5 +1,5 @@
 .main {
-  background-image: url("../../img/index-background-desktop.jpg");
+  background-image: url("../img/index-background-desktop.jpg");
   background-repeat: no-repeat;
   position: relative;
   background-position-x: center;
@@ -25,11 +25,15 @@
 }
 
 .main__slogan-wrapper {
-  background-image: url("../../img/index-background-desktop.jpg");
+  background-image: url("../img/index-background-desktop.jpg");
   background-repeat: no-repeat;
   position: relative;
   background-position-x: center;
   background-position-y: top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-desktop-2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -44,7 +48,7 @@
   }
 
   &::after {
-    content: url("../../img/index-can-mobile.png");
+    content: url("../img/index-can-mobile.png");
     position: absolute;
     display: block;
     width: 260px;
@@ -52,16 +56,25 @@
     bottom: 30px;
     top: 167px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-mobile-2x.png");
+    }
+
     @media (min-width: $tablet-width) {
-      content: url("../../img/tablet-glass.png");
+      content: url("../img/tablet-glass.png");
       top: 255px;
       left: -88px;
       width: 709px;
       height: 609px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tablet-glass-2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
       left: 50%;
+      z-index: 2;
     }
   }
 }

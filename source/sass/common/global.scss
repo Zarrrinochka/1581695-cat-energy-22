@@ -131,6 +131,10 @@
     padding-bottom: 17px;
     min-width: 234px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
+  }
 }
 
 .necessary {
@@ -156,7 +160,7 @@
   line-height: 20px;
   text-align: center;
   color: $white;
-  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-color: $green;
   padding-top: 200px;

@@ -44,6 +44,13 @@
   }
 }
 
+.programs__mass {
+  @media (min-width: $desktop-width) {
+    padding-left: 55px;
+    padding-top: 78px;
+  }
+}
+
 .programs__title {
   font-family: $oswald;
   font-weight: 400;
@@ -75,12 +82,12 @@
     top: -8px;
     width: 50px;
     height: 53px;
-    background-image: url("/img/cat-sit.svg");
+    background-image: url("../img/cat-sit.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      background-image: url("/img/cat-back-tab.svg");
+      background-image: url("../img/cat-back-tab.svg");
       width: 200px;
       height: 211px;
       left: auto;
@@ -100,14 +107,14 @@
     top: -5px;
     width: 67px;
     height: 53px;
-    background-image: url("/img/cat.svg");
+    background-image: url("../img/cat.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 200px;
-      background-image: url("/img/cat-go-tablet.svg");
+      background-image: url("../img/cat-go-tablet.svg");
       top: 15px;
       right: 29px;
       left: auto;
@@ -165,7 +172,7 @@
     top: -20px;
     width: 240px;
     height: 1px;
-    background-image: url("/img/line-240px.svg");
+    background-image: url("../img/line-240px.svg");
     background-size: 100%;
   }
 
@@ -174,9 +181,23 @@
     position: absolute;
     width: 32px;
     height: 12px;
-    background-image: url("/img/arrow-ltl.svg");
+    background-image: url("../img/arrow-ltl.svg");
     background-size: 100%;
     left: 100px;
     top: 1px;
+
+    @media (min-width: $tablet-width) {
+      left: 133px;
+      top: 8px;
+    }
+  }
+}
+
+.programs__link--2 {
+  &::after {
+    @media (min-width: $tablet-width) {
+      left: 129px;
+      top: 8px;
+    }
   }
 }

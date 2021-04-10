@@ -139,6 +139,13 @@
   }
 }
 
+.example__img-catfat {
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-top: 57px;
+  }
+}
+
 .example__slider {
   display: flex;
   flex-wrap: nowrap;

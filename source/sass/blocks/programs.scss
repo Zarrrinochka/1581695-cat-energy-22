@@ -41,6 +41,7 @@
 
   @media (min-width: $desktop-width) {
     width: 47%;
+    padding-top: 81px;
   }
 }
 
@@ -94,6 +95,14 @@
       right: 62px;
       top: 3px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 99px;
+      height: 106px;
+      left: -162px;
+      right: auto;
+      top: -33px;
+    }
   }
 }
 
@@ -118,6 +127,14 @@
       top: 15px;
       right: 29px;
       left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 133px;
+      height: 101px;
+      left: -180px;
+      right: auto;
+      top: -27px;
     }
   }
 }

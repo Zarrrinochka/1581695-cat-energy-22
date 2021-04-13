@@ -8,8 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 73px;
-    padding-bottom: 70px;
+    padding-top: 0;
+    padding-bottom: 25px;
   }
 }
 
@@ -82,13 +82,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 73px;
+    margin-right: 79px;
   }
 }
 
 .works__items:nth-child(-n + 2) {
   @media (min-width: $tablet-width) {
     margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 

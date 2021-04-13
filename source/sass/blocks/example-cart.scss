@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     width: 62%;
+    padding-bottom: 7px;
   }
 }
 
@@ -77,33 +78,15 @@
     padding-left: 10px;
   }
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   top: -38px;
-  //   width: 124px;
-  //   height: 56px;
-  //   background-image: url("../img/line-around.svg");
-  //   background-size: 100%;
-  //   z-index: -1;
-
-  //   @media (min-width: $tablet-width) {
-  //     top: -64px;
-  //     width: 162px;
-  //     height: 73px;
-  //   }
-  // }
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 0;
+    width: 151px;
+    background-color: $quite-white;
+    left: 6px;
+    bottom: -7px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
-
-// .example-cart__text--2 {
-//   &::before {
-//     @media (min-width: $tablet-width) {
-//       left: 0;
-//     }
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     padding-left: 0;
-//   }
-// }

@@ -88,6 +88,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    transform: translate(-7px, -197px);
   }
 }
 
@@ -171,6 +172,10 @@
 .example__slider {
   display: flex;
   flex-wrap: nowrap;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .example__numbers {

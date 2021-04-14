@@ -79,14 +79,19 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    white-space: nowrap;
+    //
     font-size: 14px;
     line-height: 14px;
     padding-top: 0;
-    width: 151px;
+    //width: 151px;
     background-color: $quite-white;
-    left: 6px;
-    bottom: -7px;
-    padding-right: 0;
-    padding-left: 0;
+    //left: 6px;
+    bottom: -5px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }

@@ -2,16 +2,48 @@
   margin-top: 20px;
 }
 
-.radio__label {
+.radio__wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.radio__label,
+.radio__label--checked,
+.radio__label--notchecked {
   font-family: $oswald;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $quite-black2;
+  position: relative;
+  padding: 0 0 0 60px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 37px;
+    height: 37px;
+    top: -10px;
+    left: 3px;
+    background-size: 37px 37px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+
+.radio__label--checked::before {
+  background-image: url("../img/radiobutton-checked.svg");
+}
+
+.radio__label--notchecked::before {
+  background-image: url("../img/radiobutton.svg");
 }

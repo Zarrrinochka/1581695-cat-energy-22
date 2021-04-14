@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
-    padding-bottom: 33px;
+    //padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,4 +81,8 @@
     display: block;
     padding-top: 24px;
   }
+}
+
+.cooperation__map {
+  display: block;
 }

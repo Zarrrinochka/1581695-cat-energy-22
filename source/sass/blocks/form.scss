@@ -39,6 +39,8 @@
 }
 
 .form__checkbox {
+  padding: 15px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;

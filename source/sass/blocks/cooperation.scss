@@ -25,12 +25,25 @@
 
   @media (min-width: $desktop-width) {
     //width: 34%;
-    width: 501px;
+    width: 495px;
     position: absolute;
     left: 186px;
     top: 162px;
     margin: 0;
     background-color: $white;
+    z-index: 3;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 114%;
+      height: 268%;
+      top: -88%;
+      left: -15%;
+      z-index: -1;
+      background-color: $white;
+    }
   }
 }
 
@@ -53,6 +66,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    width: 100px;
     line-height: 24px;
   }
 }
@@ -69,6 +83,8 @@
     font-size: 16px;
     line-height: 17px;
     text-align: right;
+    width: 185px;
+    justify-self: right;
   }
 
   @media (min-width: $desktop-width) {

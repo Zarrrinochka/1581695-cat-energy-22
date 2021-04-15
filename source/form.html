@@ -96,16 +96,17 @@
       <fieldset class="form__fieldset radio">
         <legend class="visually-hidden">Похудеть или набрать?</legend>
         <div class="radio__wrapper">
-          <input class="visually-hidden" name="loose" type="radio" value="loose-build" id="loose">
-          <label class="radio__label radio__label--checked" for="loose">Похудение</label>
+        <!-- name одинаковый, value разный -->
+          <input class="radio__input visually-hidden" name="loose-build" type="radio" value="loose" id="loose">
+          <label class="radio__label" for="loose">Похудение</label>
         </div>
         <div class="radio__wrapper">
-          <input class="visually-hidden" name="build" type="radio" value="loose-build" id="build">
-          <label class="radio__label radio__label--notchecked" for="build">Набор массы</label>
+          <input class="radio__input visually-hidden" name="loose-build" type="radio" value="build" id="build">
+          <label class="radio__label" for="build">Набор массы</label>
         </div>
         <div class="radio__wrapper">
-          <input class="visually-hidden" name="dontknow" type="radio" value="loose-build" id="dontknow">
-          <label class="radio__label radio__label--notchecked" for="dontknow">Не знаю (нужен ваш совет)</label>
+          <input class="radio__input visually-hidden" name="loose-build" type="radio" value="dontknow" id="dontknow">
+          <label class="radio__label" for="dontknow">Не знаю (нужен ваш совет)</label>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__contacts contacts">
@@ -127,22 +128,22 @@
       <fieldset class="form__fieldset form__moreinf">
         <legend class="form__legend text text--legend">Дополнительно</legend>
         <div class="form__checkbox">
-          <p class="cheсkbox">
-            <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
-            <label class="cheсkbox__label checkbox__label--checked" for="sugar">Сахарозаменитель</label>
-          </p>
-          <p class="checkbox">
-            <input class="visually-hidden" type="checkbox" name="water" id="water">
-            <label class="cheсkbox__label checkbox__label--notchecked" for="water">Питьевая вода</label>
-          </p>
-          <p class="checkbox">
-            <input class="visually-hidden" type="checkbox" name="milk" id="milk">
-            <label class="cheсkbox__label checkbox__label--notchecked" for="milk">Молоко</label>
-          </p>
-          <p class="checkbox">
-            <input class="visually-hidden" type="checkbox" name="vita" id="vita">
-            <label class="cheсkbox__label checkbox__label--notchecked" for="vita">Витамины</label>
-          </p>
+          <div class="checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="inp-sugar" id="sugar" checked>
+            <label class="checkbox__label" for="sugar">Сахарозаменитель</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="inp-water" id="water">
+            <label class="checkbox__label" for="water">Питьевая вода</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="inp-milk" id="milk">
+            <label class="checkbox__label" for="milk">Молоко</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="inp-vita" id="vita">
+            <label class="checkbox__label" for="vita">Витамины</label>
+          </div>
         </div>
       </fieldset>
       <div class="form__footer">

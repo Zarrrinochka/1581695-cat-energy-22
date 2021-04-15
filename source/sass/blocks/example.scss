@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 55px;
+    padding-bottom: 0;
   }
 }
 
@@ -43,10 +44,8 @@
     display: flex;
     flex-wrap: nowrap;
     background-color: $quite-white;
-  }
-
-  @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 63px;
   }
 }
 
@@ -60,7 +59,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: $quite-white;
-    width: 47%;
+    width: 30%;
     align-content: flex-start;
   }
 }
@@ -89,6 +88,7 @@
     display: flex;
     flex-wrap: wrap;
     transform: translate(-7px, -197px);
+    margin-bottom: -190px;
   }
 }
 
@@ -136,6 +136,7 @@
     text-align: right;
     margin-right: 0;
     margin-left: auto;
+    width: 180px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,19 +145,21 @@
     margin-left: 0;
     padding-top: 0;
     margin-top: 51px;
+    width: 340px;
   }
 }
 
-.example__img {
-  padding-top: 42px;
-  padding-bottom: 28px;
+// для picture
+// .example__img {
+//   padding-top: 42px;
+//   padding-bottom: 28px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 27px;
-    margin-top: 0;
-  }
-}
+//   @media (min-width: $tablet-width) {
+//     padding-top: 0;
+//     padding-bottom: 27px;
+//     margin-top: 0;
+//   }
+// }
 
 .example__img-catfat {
   @media (min-width: $tablet-width) {
@@ -175,11 +178,27 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 20px;
+    margin-bottom: 0;
+    margin-top: auto;
   }
 }
 
 .example__numbers {
   @media (min-width: $desktop-width) {
     margin-left: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__img {
+    position: relative;
+  }
+
+  .example__img-fat {
+    position: absolute;
+  }
+
+  .example__img-notfat {
+    position: absolute;
   }
 }

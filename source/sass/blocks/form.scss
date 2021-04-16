@@ -1,4 +1,5 @@
 .form__text {
+  width: 100%;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -9,17 +10,23 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 40%;
+    width: 100%;
   }
 }
 
 .form__filed-wrapper {
   margin-bottom: 14px;
-  display: flex;
+  //display: flex;
 }
 
 .form__fieldset {
   display: block;
+}
+
+.form__name-radio {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .form__input-text {
@@ -38,10 +45,18 @@
 }
 
 .form__checkbox {
+  padding: 15px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+.form__send {
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
   }
 }
 

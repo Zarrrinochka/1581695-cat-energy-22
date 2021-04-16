@@ -47,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 65px;
+    margin-right: 14px;
   }
 }
 
@@ -66,9 +66,14 @@
   }
 }
 
-.header__logo-text {
+.header__logo-text img {
   display: block;
   width: 101px;
   height: 20px;
   margin-right: 68px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 22px;
+  }
 }

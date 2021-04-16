@@ -1,5 +1,5 @@
 .programs {
-  //не ставь падинг, испортиш фон!!!
+  //не ставь падинг, испортишь фон!!!
 
   @media (min-width: $tablet-width) {
     //
@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 80px;
+    padding-bottom: 72px;
   }
 }
 
@@ -31,6 +32,8 @@
   background-color: $quite-white2;
   padding-top: 28px;
   padding-bottom: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -41,6 +44,14 @@
 
   @media (min-width: $desktop-width) {
     width: 47%;
+    padding-top: 81px;
+  }
+}
+
+.programs__mass {
+  @media (min-width: $desktop-width) {
+    padding-left: 55px;
+    padding-top: 78px;
   }
 }
 
@@ -51,17 +62,17 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
-  margin-left: 91px;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 162px;
+    padding-left: 162px;
   }
 }
 
@@ -71,21 +82,29 @@
   &::before {
     content: "";
     position: absolute;
-    left: -68px;
+    left: 0;
     top: -8px;
     width: 50px;
     height: 53px;
-    background-image: url("/img/cat-sit.svg");
+    background-image: url("../img/cat-sit.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      background-image: url("/img/cat-back-tab.svg");
+      background-image: url("../img/cat-back-tab.svg");
       width: 200px;
       height: 211px;
       left: auto;
-      right: 62px;
       top: 3px;
+      right: 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 99px;
+      height: 106px;
+      left: 0;
+      right: auto;
+      top: -36px;
     }
   }
 }
@@ -96,29 +115,37 @@
   &::before {
     content: "";
     position: absolute;
-    left: -78px;
+    left: -7px;
     top: -5px;
     width: 67px;
     height: 53px;
-    background-image: url("/img/cat.svg");
+    background-image: url("../img/cat.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 200px;
-      background-image: url("/img/cat-go-tablet.svg");
+      background-image: url("../img/cat-go-tablet.svg");
       top: 15px;
-      right: 29px;
+      right: 8px;
       left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 133px;
+      height: 101px;
+      left: -18px;
+      right: auto;
+      top: -27px;
     }
   }
 }
 
 .programs__description {
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 17px;
+  width: 240px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -127,16 +154,26 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    width: 375px;
+    padding-top: 26px;
+    padding-bottom: 26px;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 25px;
-    margin-bottom: 52px;
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 75px;
-    margin-bottom: 28px;
+    width: 467px;
+    padding-top: 75px;
+    padding-bottom: 0;
+  }
+}
+
+.programs__description--min {
+  width: 342px;
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
   }
 }
 
@@ -148,25 +185,30 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
-  margin-top: 42px;
-  margin-left: 19px;
+  padding-top: 13px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 0;
+    display: block;
+    text-align: left;
+    padding-top: 24px;
   }
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
-    top: -20px;
+    top: -8px;
     width: 240px;
     height: 1px;
-    background-image: url("/img/line-240px.svg");
+    background-image: url("../img/line-240px.svg");
     background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &::after {
@@ -174,9 +216,23 @@
     position: absolute;
     width: 32px;
     height: 12px;
-    background-image: url("/img/arrow-ltl.svg");
+    background-image: url("../img/arrow-ltl.svg");
     background-size: 100%;
     left: 100px;
-    top: 1px;
+    top: 13px;
+
+    @media (min-width: $tablet-width) {
+      left: 133px;
+      top: 33px;
+    }
+  }
+}
+
+.programs__link--mass {
+  &::after {
+    @media (min-width: $tablet-width) {
+      left: 129px;
+      top: 34px;
+    }
   }
 }

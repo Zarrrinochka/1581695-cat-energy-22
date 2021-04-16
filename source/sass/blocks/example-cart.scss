@@ -2,23 +2,25 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding-top: 39px;
-  padding-bottom: 19px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 62%;
+    padding-bottom: 7px;
   }
 }
 
 .example-cart__block {
   z-index: 1;
   text-align: center;
-  min-width: 124px;
+  width: 124px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
@@ -36,59 +38,60 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  border: 1px solid $grey-special;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 0;
-    margin-bottom: 11px;
   }
 }
 
 .example-cart__text {
+  position: absolute;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
-  position: relative;
-  padding-top: 9px;
+  background-color: $quite-white;
+  left: 21px;
+  bottom: -16px;
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 81px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    padding-left: 0;
     padding-top: 0;
+    width: 151px;
+    background-color: $white;
+    left: 6px;
+    bottom: -6px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -38px;
-    width: 124px;
-    height: 56px;
-    background-image: url("/img/line-around.svg");
-    background-size: 100%;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      top: -64px;
-      width: 162px;
-      height: 73px;
-    }
-  }
-}
-
-.example-cart__text--2 {
-  &::before {
-    @media (min-width: $tablet-width) {
-      left: 0;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
+  @media (min-width: $desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    white-space: nowrap;
+    //
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 0;
+    //width: 151px;
+    background-color: $quite-white;
+    //left: 6px;
+    bottom: -8px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }

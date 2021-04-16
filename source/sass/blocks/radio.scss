@@ -1,5 +1,14 @@
 .radio {
   margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.radio__wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .radio__label {
@@ -9,9 +18,41 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $quite-black2;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.radio__label::before {
+  background-image: url("../img/radiobutton.svg");
+  content: "";
+  display: block;
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.radio__label::after {
+  background-image: url("../img/radiobutton-checked.svg");
+  content: "";
+  display: block;
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.radio__input:checked + .radio__label::after {
+  opacity: 1;
 }

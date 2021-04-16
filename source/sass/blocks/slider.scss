@@ -14,6 +14,10 @@
 
 .slider__before {
   margin-left: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 68px;
+  }
 }
 
 .slider__img {

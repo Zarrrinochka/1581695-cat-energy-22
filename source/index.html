@@ -10,35 +10,6 @@
 
 <body class="body">
 
-  <style>
-    html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url("preview/index-open-mobile.png");
-      /* background-image: url("preview/index-close-mobile.png"); */
-    }
-
-    /* Tab */
-
-    @media (min-width: 768px) {
-      html {
-        background-image: url("preview/index-tablet.png");
-      }
-    }
-
-    /* Desk */
-
-    @media (min-width: 1440px) {
-      html {
-        background-image: url("preview/index-desktop.png");
-      }
-    }
-
-    body {
-      opacity: 0.5;
-    }
-  </style>
-
   <header class="header">
     <div class="header__big-wrapper rulers">
       <div class="header__wrapper">
@@ -49,9 +20,14 @@
             <img src="img\logo-mobile.svg" alt="Кэт энерджи логотип" width="34" height="38">
           </picture>
         </a>
+
         <a class="header__logo-text" href="#">
-          <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-text-desk.svg">
+            <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
+          </picture>
         </a>
+
         <button class="toggle" type="button">
           <img src="img\x.svg" alt="закрыть" width="20" height="20">
           <span class="visually-hidden">Открыть меню</span>
@@ -79,9 +55,9 @@
     </div>
   </header>
   <main class="main">
-    <section class="main__top rulers">
+    <section class="main__top">
       <div class="main__slogan-wrapper">
-        <h1 class="text main__title">Функциональное <br class="br-for-tablet-desktop">питание для котов</h1>
+        <h1 class="text main__title">Функциональное питание для котов</h1>
         <p class="text text--slogan main__slogan">Занялся собой? Займись котом!</p>
       </div>
       <button class="button button--programm" type="submit">Подобрать программу</button>
@@ -90,33 +66,31 @@
       <h2 class="visually-hidden">Набрать массу или похудеть?</h2>
       <div class="programs__loose">
         <h3 class="programs__title programs__title--loose">Похудение</h3>
-        <p class="programs__description"> Ваш кот весит больше собаки и почти утратил<br class="tablet"> способность <br class="br-for-desktop">
-          лазить по деревьям?
-          Пора на диету!<br class="tablet"> Cat Energy Slim поможет вашему питомцу <br class="tablet"> сбросить лишний
-          вес.
-        </p>
+        <p class="programs__description"> Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="programs__link" href="">Каталог slim</a>
       </div>
       <div class="programs__mass">
         <h3 class="programs__title programs__title--mass">Набор массы</h3>
-        <p class="programs__description">Заработать авторитет среди дворовых котов<br class="tablet">  и даже собак? <br class="br-for-desktop"> Серия Cat Energy Pro
-          поможет<br class="tablet">  вашему коту нарастить необходимые<br class="tablet">  мышцы!</p>
-        <a class="programs__link" href="">Каталог pro</a>
+        <p class="programs__description programs__description--min">Заработать авторитет среди дворовых котов и даже
+          собак? Серия Cat Energy Pro
+          поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="programs__link programs__link--mass" href="">Каталог pro</a>
       </div>
     </section>
     <section class="works rulers">
       <h2 class="works__title">Как это работает</h2>
       <ul class="works__list">
-        <li class="works__items works__items--health">Функциональное питание <br class="br-for-desktop"> содержит только полезные питательные
+        <li class="works__items works__items--health">Функциональное питание содержит только полезные питательные
           вещества.
         </li>
-        <li class="works__items works__items--simple">Выпускается в виде порошка, который нужно лишь залить <br class="br-for-desktop"> кипятком и
+        <li class="works__items works__items--simple">Выпускается в виде порошка, который нужно лишь залить кипятком и
           готово.
         </li>
         <li class="works__items works__items--exchange">Замените один-два приема обычной еды на наше функциональное
           питание.
         </li>
-        <li class="works__items works__items--mounth">Уже через месяц наслаждайтесь изменениями к лучшему<br class="br-for-tablet-desktop"> вашего
+        <li class="works__items works__items--mounth">Уже&nbspчерез&nbspмесяц&nbspнаслаждайтесь изменениями к лучшему вашего
           питомца!
         </li>
       </ul>
@@ -126,28 +100,40 @@
       <div class="example__big-container">
         <div class="example__container rulers">
           <p class="example__text example__result">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой <br class="br-for-desktop"> обычный корм на Cat Energy Slim. Отличный результат<br class="br-for-desktop"> без
-            изнуряющих тренировок! При этом он не менял своих<br class="br-for-desktop"> привычек и <br class="tablet"> по-прежнему спит по 16 часов в день.
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
           <div class="example__bottom">
             <div class="example-cart">
               <div class="example-cart__block">
-                <p class="example-cart__number">5 КГ</p>
-                <p class="example-cart__text">снижение<br class="br-for-mob"> веса</p>
+                <span class="example-cart__number">5 КГ</span>
+                <span class="example-cart__text">снижение веса</span>
               </div>
               <div class="example-cart__block">
-                <p class="example-cart__number">60 ДНЕЙ</p>
-                <p class="example-cart__text example-cart__text--2">затрачено<br class="br-for-mob"> времени</p>
+                <span class="example-cart__number">60 ДНЕЙ</span>
+                <span class="example-cart__text example-cart__text--2">затрачено времени</span>
               </div>
             </div>
-            <p class="example__money">Затраты на питание:<br class="tablet"> 15 000 РУБ. </p>
+            <div class="example__money">Затраты на питание:
+              <span class="example__numbers">15 000 РУБ.</span>
+            </div>
           </div>
         </div>
         <div class="example__wrapper">
-          <div class="example__img"><img src="img/cat-fat.png" alt="fat cat"></div>
+          <div class="example__img">
+            <!-- <picture>
+              <source media="(min-width: 1440px)" srcset="img/fat-cat-desk.png 1x, img/fat-cat-desk@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fat-cat-tab.png 1x, img/fat-cat-tab@2x.png 2x">
+              <img class="example__img-catfat" src="img/fat-cat-mob.png"
+                srcset="img/fat-cat-mob.png 1x, img/fat-cat-mob@2x.png 2x" alt="fat cat">
+            </picture> -->
+            <img class="example__img-fat" src="img/example-before.png" alt="fat cat">
+            <img class="example__img-notfat" src="img/example-after.png" alt="not fat cat">
+          </div>
           <div class="example__slider slider rulers">
             <span class="slider__slide slider__before">было</span>
-            <div class="slider__img"><img src="img/slider.svg" alt="fat cat"></div>
+            <!-- <div class="slider__img"><img src="img/slider.svg" alt="fat cat"></div> -->
+            <input type="range">
             <span class="slider__slide">стало</span>
           </div>
         </div>
@@ -155,12 +141,17 @@
     </section>
     <section class="cooperation">
       <div class="rulers cooperation__block">
-        <h2 class="cooperation__diller">Приглашаем<br>к сотрудничеству<br class="br-for-tablet-desktop"> дилеров!</h2>
-        <p class="cooperation__adress">ул. Большая<br class="br-for-tablet-desktop"> Конюшенная, д. 19/8<br class="br-for-tablet-desktop"> Санкт-Петербург</p>
+        <h2 class="cooperation__diller">Приглашаем к&nbspсотрудничеству дилеров!</h2>
+        <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8
+          <span class="cooperation__town">Санкт-Петербург</span>
+        </p>
       </div>
-      <div>
-        <img src="img/map-mob.jpg" alt="map-mob">
-      </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/map-desk.jpg 1x, img/map-desk@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tab.jpg 1x, img/map-tab@2x.jpg 2x">
+        <img class="cooperation__map" src="img/map-mob.jpg" srcset="img/map-mob.jpg 1x, img/map-mob@2x.png 2x"
+          alt="map">
+      </picture>
     </section>
   </main>
   <footer class="footer">

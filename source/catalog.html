@@ -39,15 +39,24 @@
     }
   </style> -->
 
-  <header class="header rulers">
-    <div class="header__big-wrapper">
+  <header class="header">
+    <div class="header__big-wrapper rulers">
       <div class="header__wrapper">
         <a class="header__logo" target="_blank" href="index.html">
-          <img src="img\logo-mobile.svg" alt="Кэт энерджи логотип" width="34" height="38">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img\logo-mobile.svg" alt="Кэт энерджи логотип" width="34" height="38">
+          </picture>
         </a>
-        <a class="header__logo-text" target="_blank" href="index.html">
-          <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
+
+        <a class="header__logo-text" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-text-desk.svg">
+            <img src="img\logo-text.svg" alt="Кэт энерджи логотип текст" width="101" height="20">
+          </picture>
         </a>
+
         <button class="toggle" type="button">
           <img src="img\x.svg" alt="закрыть" width="20" height="20">
           <span class="visually-hidden">Открыть меню</span>

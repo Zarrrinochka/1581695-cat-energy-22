@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     width: 45%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .checkbox__label {

@@ -1,8 +1,23 @@
 // .contacts {
 // }
 
-// .contacts__item {
-// }
+.contacts__items {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.contacts__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
 
 .contacts__input {
   border: 1px solid $grey-for-input;

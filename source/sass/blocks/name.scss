@@ -1,5 +1,9 @@
 .name {
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .name__label {

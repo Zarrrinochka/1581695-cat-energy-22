@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 40%;
+    width: 100%;
   }
 }
 
@@ -21,6 +21,12 @@
 
 .form__fieldset {
   display: block;
+}
+
+.form__name-radio {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .form__input-text {
@@ -45,6 +51,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+.form__send {
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
   }
 }
 

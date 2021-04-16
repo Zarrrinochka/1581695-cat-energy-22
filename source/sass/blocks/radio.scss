@@ -1,5 +1,9 @@
 .radio {
   margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .radio__wrapper {

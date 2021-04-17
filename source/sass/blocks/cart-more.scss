@@ -3,6 +3,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.cart-more__tab {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+  }
 }
 
 .cart-more__item {
@@ -17,5 +31,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
   }
 }

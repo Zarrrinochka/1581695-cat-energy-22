@@ -156,26 +156,6 @@
   }
 }
 
-.stock {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: $white;
-  background-image: url("../img/gift-photo-mobile.jpg");
-  background-repeat: no-repeat;
-  background-color: $green;
-  padding-top: 200px;
-  padding-bottom: 50px;
-
-  @media (min-width: $tablet-width) {
-    text-align: left;
-    padding-left: 65%;
-  }
-}
-
 /*Обнуление*/
 * {
   padding: 0;

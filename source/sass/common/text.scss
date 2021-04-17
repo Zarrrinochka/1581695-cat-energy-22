@@ -42,6 +42,7 @@
   line-height: 16px;
   text-align: left;
   color: $grey;
+  text-transform: none;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

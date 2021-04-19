@@ -1,13 +1,25 @@
 // .contacts {
 // }
 
+.contacts__lehgend {
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 66px;
+  }
+}
+
 .contacts__items {
+  padding-top: 9px;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
 .contacts__item {
+  display: flex;
+  margin-bottom: 16px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     padding-left: 15px;
@@ -19,6 +31,8 @@
   }
 }
 
-.contacts__input {
-  border: 1px solid $grey-for-input;
+.contacts__text {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  width: 80px;
 }

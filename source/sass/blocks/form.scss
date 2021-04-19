@@ -1,3 +1,7 @@
+.form {
+  padding-bottom: 33px;
+}
+
 .form__text {
   width: 100%;
   font-family: $oswald;
@@ -16,14 +20,19 @@
 
 .form__filed-wrapper {
   margin-bottom: 14px;
-  //display: flex;
+  display: flex;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__fieldset {
   display: block;
 }
 
-.form__name-radio {
+.name-radio {
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -45,7 +54,10 @@
 }
 
 .form__checkbox {
-  padding: 15px;
+  padding-top: 26px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -55,6 +67,13 @@
 }
 
 .form__send {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+
   @media (min-width: $desktop-width) {
     min-width: 568px;
   }

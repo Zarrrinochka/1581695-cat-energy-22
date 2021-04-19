@@ -1,3 +1,12 @@
+.main-form {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+}
+
 .main-form__title,
 .main-form__slogan {
   color: $black;
@@ -5,12 +14,19 @@
 }
 
 .main-form__title {
-  margin-top: 27px;
-  margin-bottom: 37px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    margin-bottom: 23px;
+  }
 }
 
 .main-form__slogan {
-  margin-bottom: 58px;
+  margin-bottom: 39px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {

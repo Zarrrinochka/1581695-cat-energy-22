@@ -1,0 +1,22 @@
+// .comments {
+
+// }
+
+.comments__legend {
+  padding-top: 10px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 76px;
+  }
+}
+
+.comments__textarea {
+  padding-top: 9px;
+  padding-bottom: 85px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}

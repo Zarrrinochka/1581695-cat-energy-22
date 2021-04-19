@@ -105,6 +105,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 32%;
+    position: relative;
   }
 }
 
@@ -122,4 +123,52 @@
 
 .works__items--mounth {
   background-image: url("../img/clock.svg");
+}
+
+.works__items:first-child::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: url("../img/1.svg");
+    right: 75px;
+    top: 0;
+    width: 71px;
+    height: 227px;
+    z-index: -1;
+  }
+}
+
+.works__items:nth-child(2)::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: url("../img/2.svg");
+    right: 75px;
+    top: 0;
+    width: 71px;
+    height: 227px;
+    z-index: -1;
+  }
+}
+
+.works__items:nth-child(3)::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: url("../img/3.svg");
+    right: 75px;
+    top: 0;
+    width: 71px;
+    height: 227px;
+    z-index: -1;
+  }
+}
+
+.works__items:nth-child(4)::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: url("../img/4.svg");
+    right: 75px;
+    top: 0;
+    width: 71px;
+    height: 227px;
+    z-index: -1;
+  }
 }

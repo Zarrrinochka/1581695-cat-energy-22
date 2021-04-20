@@ -1,4 +1,4 @@
-.body {
+.container {
   margin: 0 auto;
 
   @media (min-width: $mobile-width-only) {
@@ -209,6 +209,7 @@ ul li {
   list-style: none;
 }
 
-section {
+section,
+img {
   display: block;
 }

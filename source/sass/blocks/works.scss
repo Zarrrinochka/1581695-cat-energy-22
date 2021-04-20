@@ -78,7 +78,7 @@
 }
 
 .works__items:not(:last-child) {
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 20px;
   }
 

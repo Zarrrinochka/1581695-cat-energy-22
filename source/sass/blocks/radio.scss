@@ -53,30 +53,35 @@
 .radio__label::after {
   content: "";
   display: block;
-  width: 30px;
-  height: 31px;
   position: absolute;
-  top: -4px;
-  left: 0;
+  border-radius: 50px;
 
   @media (min-width: $tablet-width) {
     background-size: contain;
-    top: -5px;
-    left: 30px;
     width: 40px;
     height: 41px;
   }
 }
 
 .radio__label::before {
-  background-image: url("../img/radiobutton.svg");
+  //background-image: url("../img/radiobutton.svg");
+  border: 1px solid $grey-special;
   z-index: 1;
+  width: 30px;
+  height: 31px;
+  top: -4px;
+  left: 0;
 }
 
 .radio__label::after {
-  background-image: url("../img/radiobutton-checked.svg");
+  //background-image: url("../img/radiobutton-checked.svg");
   z-index: 2;
+  background-color: $green;
   opacity: 0;
+  width: 13px;
+  height: 13px;
+  top: 5px;
+  left: 9px;
 }
 
 .radio__input:checked + .radio__label::after {

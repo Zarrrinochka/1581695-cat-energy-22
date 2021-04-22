@@ -27,8 +27,8 @@
     //width: 34%;
     width: 495px;
     position: absolute;
-    left: 186px;
-    top: 162px;
+    left: 30%;
+    top: 31%;
     margin: 0;
     background-color: $white;
     z-index: 3;
@@ -43,6 +43,32 @@
       left: -15%;
       z-index: -1;
       background-color: $white;
+    }
+  }
+}
+
+.cooperation__block--color {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: $mobile-width-only;
+    height: 268%;
+    top: -88%;
+    left: -$mobile-rullers;
+    z-index: -1;
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-width;
+      left: -$tablet-rullers;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      left: -$desktop-rullers;
     }
   }
 }

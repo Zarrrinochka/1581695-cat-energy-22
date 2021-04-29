@@ -1,6 +1,6 @@
 .example {
   background-color: $quite-white;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
 }
 
 .example__big-container {
-  padding-top: 17px;
+  padding-top: 19px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -65,7 +65,7 @@
 }
 
 .example__bottom {
-  padding-top: 25px;
+  padding-top: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -189,16 +189,28 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .example__img {
-    position: relative;
-  }
-
-  .example__img-fat {
-    position: absolute;
-  }
-
-  .example__img-notfat {
-    position: absolute;
-  }
+.example__imgs {
+  position: relative;
+  display: block;
+  width: 280px;
+  height: 232px;
 }
+
+.example__img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-size: auto 100%;
+}
+
+.example__img-fat {
+  left: 0;
+  background-image: url("../img/cat-fat-mob.png");
+}
+
+.example__img-notfat {
+  right: 0;
+  background-image: url("../img/cat-skinny-mob.png");
+}
+

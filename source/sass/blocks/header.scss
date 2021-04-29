@@ -15,7 +15,7 @@
 
 .header__wrapper {
   display: flex;
-  min-height: 66px;
+  min-height: 63px;
   align-items: center;
   position: relative;
 
@@ -31,7 +31,7 @@
     content: "";
     position: absolute;
     display: block;
-    bottom: 0;
+    bottom: -3px;
     right: -20px;
     width: 320px;
     height: 1px;

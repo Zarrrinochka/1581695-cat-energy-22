@@ -41,15 +41,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 47%;
-    padding-top: 81px;
+    width: 570px;
+    padding-top: 78px;
+    padding-bottom: 60px;
   }
 }
 
 .programs__mass {
   @media (min-width: $desktop-width) {
-    padding-left: 55px;
-    padding-top: 78px;
+    padding-left: 52px;
+    padding-top: 75px;
   }
 }
 
@@ -167,11 +168,12 @@
   }
 }
 
-.programs__description--min {
+.programs__description--mass {
   width: 342px;
 
   @media (min-width: $desktop-width) {
     width: 467px;
+    padding-top: 78px;
   }
 }
 

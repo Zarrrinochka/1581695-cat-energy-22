@@ -5,14 +5,14 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding-top: 43px;
+    padding-top: 44px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 55px;
+    padding-top: 35px;
     padding-bottom: 0;
   }
 }
@@ -33,19 +33,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 }
 
 .example__big-container {
   padding-top: 19px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: nowrap;
     background-color: $quite-white;
     padding-top: 0;
-    padding-bottom: 63px;
+    padding-bottom: 0;
   }
 }
 
@@ -79,16 +83,17 @@
 }
 
 .example__wrapper {
+  padding-top: 34px;
+
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
+    padding-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    transform: translate(-7px, -197px);
-    margin-bottom: -190px;
+    transform: translate(-97px, -267px);
+    margin-bottom: -197px;
   }
 }
 
@@ -109,6 +114,7 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
     font-size: 16px;
     line-height: 24px;
     width: 700px;
@@ -193,7 +199,12 @@
   position: relative;
   display: block;
   width: 280px;
-  height: 232px;
+  height: 235px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 520px;
+  }
 }
 
 .example__img {
@@ -206,11 +217,28 @@
 
 .example__img-fat {
   left: 0;
+  background-position: left center;
   background-image: url("../img/cat-fat-mob.png");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-fat-tab.png");
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   background-image: url("../img/cat-fat-desk.png");
+  // }
 }
 
 .example__img-notfat {
   right: 0;
+  background-position: right center;
   background-image: url("../img/cat-skinny-mob.png");
-}
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-skinny-tab.png");
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   background-image: url("../img/cat-skinny-desk.png");
+  // }
+}

@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
+    padding-top: 27px;
   }
 }
 
@@ -54,6 +54,16 @@
 
     &:nth-child(2) {
       margin-right: 37px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      margin-right: 36px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 34px;
     }
   }
 }

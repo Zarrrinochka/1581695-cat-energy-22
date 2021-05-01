@@ -22,10 +22,10 @@
     padding-left: 118px;
     padding-right: 118px;
     padding-bottom: 527px;
-    padding-top: 55px;
+    padding-top: 51px;
     background-image: url("../img/promo-glass-tab.png");
     background-repeat: no-repeat;
-    background-position-y: 255px;
+    background-position-y: 252px;
     background-position-x: 29px;
     background-size: 709px;
     align-items: flex-start;
@@ -36,10 +36,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     position: relative;
     padding-left: 190px;
     padding-bottom: 105px;
-    padding-top: 105px;
+    padding-top: 104px;
     background-image: url("../img/promo-glass-desk.png");
     background-position-y: 30%;
     background-position-x: 63%;
@@ -97,7 +98,7 @@
 
 .main__title {
   @media (min-width: $tablet-width) {
-    padding-bottom: 14px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,5 +114,9 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
   }
 }

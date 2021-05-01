@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 70px;
-    margin-right: 70px;
+    margin-right: 71px;
     margin-bottom: 60px;
   }
 
@@ -27,8 +27,8 @@
     //width: 34%;
     width: 495px;
     position: absolute;
-    left: 30%;
-    top: 31%;
+    left: 13%;
+    top: 40%;
     margin: 0;
     background-color: $white;
     z-index: 3;
@@ -115,6 +115,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    justify-self: left;
   }
 }
 

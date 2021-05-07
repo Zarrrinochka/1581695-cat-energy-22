@@ -82,3 +82,12 @@
     height: 22px;
   }
 }
+
+.header__wrapper:hover {
+  opacity: 0.8;
+}
+
+.header__wrapper:focus,
+.header__wrapper:active {
+  opacity: 0.6;
+}

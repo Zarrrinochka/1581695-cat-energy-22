@@ -14,12 +14,13 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 26px;
+    padding-top: 28px;
     padding-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 31px;
+    //padding-top: 31px;
+    padding-top: 33px;
   }
 }
 
@@ -191,4 +192,3 @@
 .footer__logo2 svg:focus {
   fill-opacity: 0.3;
 }
-

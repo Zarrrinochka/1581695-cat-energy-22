@@ -73,6 +73,8 @@
 .name-radio-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
   }
 }
 
@@ -178,6 +180,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    min-width: 286px;
+    padding-top: 17px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
   }
 }
 

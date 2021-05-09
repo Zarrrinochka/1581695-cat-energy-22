@@ -10,6 +10,10 @@
     background-color: $grey-line;
     bottom: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -18,42 +22,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 570px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
-.form__filed-label {
-  width: auto;
-  margin-right: 14px;
-  align-self: center;
-
+.name__input {
   @media (min-width: $tablet-width) {
-    margin-right: 18px;
-  }
-}
-
-.form__filed-input {
-  min-height: 45px;
-  padding-left: 13px;
-  flex-grow: 1;
-  border: 1px solid $grey-for-input;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 16px;
-  }
-}
-
-.form__input-text {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  align-items: center;
-  text-transform: uppercase;
-  color: $grey;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 50px;
+    padding-left: 18px;
   }
 }

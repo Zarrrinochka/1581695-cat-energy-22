@@ -2,11 +2,12 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    width: 45%;
+    width: 273px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 231px;
   }
 }
 
@@ -25,6 +26,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 60px;
   }
 }
 
@@ -34,12 +36,18 @@
   position: absolute;
   content: "";
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   top: -3px;
   left: 0;
   z-index: 1;
   border: 1px solid $grey-special;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -6px;
+  }
 }
 
 .checkbox__label::after {
@@ -51,10 +59,15 @@
   display: block;
   width: 19px;
   height: 15px;
-  top: 10px;
-  left: 10px;
+  top: 4px;
+  left: 7px;
   z-index: 2;
   opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+    left: 11px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::after {

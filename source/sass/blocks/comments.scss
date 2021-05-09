@@ -5,10 +5,40 @@
 .comments__legend {
   padding-top: 10px;
   padding-bottom: 38px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: -180px;
+    top: 26px;
+    content: "";
+    width: 158px;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+      width: 768px;
+      left: -66px;
+      top: 67px;
+      background-image: url("data:image/svg+xml,%3Csvg width='767' height='2' viewBox='0 0 767 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='289' y1='1' x2='767' y2='1' stroke='%2368B738' stroke-width='2'/%3E%3Cline y1='1' x2='30' y2='1' stroke='%2368B738' stroke-width='2'/%3E%3C/svg%3E%0A");
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      left: -$desktop-rullers;
+      top: 69px;
+      background-image: url("data:image/svg+xml,%3Csvg width='1440' height='2' viewBox='0 0 1440 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='332' y1='1' x2='1440' y2='1' stroke='%2368B738' stroke-width='2'/%3E%3Cline y1='1' x2='70' y2='1' stroke='%2368B738' stroke-width='2'/%3E%3C/svg%3E");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
     padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
   }
 }
 
@@ -18,5 +48,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    padding-left: 18px;
+    padding-bottom: 22px;
   }
 }

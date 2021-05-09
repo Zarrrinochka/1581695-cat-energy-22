@@ -24,4 +24,3 @@ input.addEventListener('input', function(e) {
   first.style.width = value + '%'
   second.style.width = (100 - value) + '%'
 })
-

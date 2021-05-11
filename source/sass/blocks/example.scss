@@ -47,9 +47,21 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: nowrap;
-    background-color: $quite-white;
+    background-color: #f2f2f2;
     padding-top: 0;
     padding-bottom: 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/dark-rectangle.jpg");
+      background-repeat: no-repeat;
+      right: 0;
+      top: 0;
+      width: 395px;
+      height: 462px;
+    }
   }
 }
 
@@ -62,7 +74,7 @@
     padding-top: 71px;
     display: flex;
     flex-wrap: wrap;
-    background-color: $quite-white;
+    background-color: #f2f2f2;
     width: 30%;
     align-content: flex-start;
   }
@@ -221,7 +233,7 @@
   background-image: url("../img/cat-fat-mob.png");
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/cat-fat-tab.png");
+    background-image: url("../img/cat-fat.png");
   }
 
   // @media (min-width: $desktop-width) {

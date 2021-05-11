@@ -93,6 +93,21 @@
   }
 }
 
+.form-rulers {
+  margin-left: $mobile-rullers;
+  margin-right: $mobile-rullers;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

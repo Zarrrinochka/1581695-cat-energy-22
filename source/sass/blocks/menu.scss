@@ -59,6 +59,18 @@
   }
 }
 
+.menu__item--current2::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    left: 0;
+    bottom: 11px;
+  }
+}
+
 .menu__item {
   padding-top: 25px;
   padding-bottom: 21px;

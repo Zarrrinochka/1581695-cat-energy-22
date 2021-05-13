@@ -70,4 +70,13 @@
   @media (min-width: $desktop-width) {
     min-width: 266px;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

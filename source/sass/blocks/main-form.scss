@@ -1,3 +1,35 @@
+.main-form {
+  padding-top: 23px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 34px;
+  }
+}
+
+.main-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 320px;
+  height: 1px;
+  background-image: url("../img/line.svg");
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-form__title,
 .main-form__slogan {
   color: $black;
@@ -5,12 +37,23 @@
 }
 
 .main-form__title {
-  margin-top: 27px;
-  margin-bottom: 37px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .main-form__slogan {
-  margin-bottom: 58px;
+  margin-bottom: 39px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {

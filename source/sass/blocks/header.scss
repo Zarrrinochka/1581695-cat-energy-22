@@ -1,3 +1,7 @@
+// .header {
+//   background-image: url("../img/white-green.png");
+//   background-size: cover;
+// }
 
 .header__big-wrapper {
   @media (min-width: $tablet-width) {
@@ -11,23 +15,23 @@
 
 .header__wrapper {
   display: flex;
-  min-height: 66px;
+  min-height: 63px;
   align-items: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-top: 51px;
   }
 
   &::after {
     content: "";
     position: absolute;
     display: block;
-    bottom: 0;
+    bottom: -3px;
     right: -20px;
     width: 320px;
     height: 1px;
@@ -62,7 +66,8 @@
 
   @media (min-width: $desktop-width) {
     width: 70px;
-    height: 60px;
+    height: 61px;
+    display: inline;
   }
 }
 
@@ -76,4 +81,13 @@
     width: 118px;
     height: 22px;
   }
+}
+
+.header__wrapper:hover {
+  opacity: 0.8;
+}
+
+.header__wrapper:focus,
+.header__wrapper:active {
+  opacity: 0.6;
 }

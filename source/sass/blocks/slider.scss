@@ -1,3 +1,23 @@
+.slider {
+  width: 200px;
+  padding-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 572px;
+    padding-top: 19px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 43px;
+    padding-top: 37px;
+  }
+}
+
 .slider__slide {
   font-family: $oswald;
   font-weight: normal;
@@ -5,23 +25,143 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+  padding-left: 4px;
+  min-width: 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='2' height='1' viewBox='0 0 2 1' fill='none' stroke='black' opacity='0.4' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.25' y1='0.5' x2='1.25' y2='0.5'/%3E%3C/svg%3E%0A");
+    background-repeat: repeat-x;
+    background-position-y: bottom;
   }
 }
 
-.slider__before {
-  margin-left: 44px;
+.slider__slide:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='47' height='1' viewBox='0 0 47 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline opacity='0.4' y1='0.5' x2='47' y2='0.5' stroke='black'/%3E%3C/svg%3E");
+}
 
-  @media (min-width: $tablet-width) {
-    margin-left: 68px;
-  }
+.slider__slide:active {
+  background-image: none;
 }
 
 .slider__img {
   transform: translateY(3px);
   margin-left: 17px;
   margin-right: 18px;
+}
+
+.slider__input {
+  appearance: none;
+  width: 84px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+  }
+}
+
+.slider__input:focus {
+  outline: none;
+}
+
+.slider__input::-webkit-slider-runnable-track {
+  width: 84px;
+  height: 14px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  padding-top: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+}
+
+.slider__input::-webkit-slider-thumb {
+  border: none;
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
+  background: #68b738;
+  cursor: pointer;
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    border-radius: 45px;
+    background: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%2368B738'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -16px;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    border: 1px solid #68b738;
+  }
+}
+
+// .slider__input:focus::-webkit-slider-runnable-track {
+//   background: #ac51b5;
+// }
+
+.slider__input::-moz-range-track {
+  width: 84px;
+  height: 14px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  padding-top: 3px;
+  padding-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+}
+
+.slider__input::-moz-range-thumb {
+  border: none;
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
+  background: #68b738;
+  cursor: pointer;
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    border-radius: 45px;
+    background: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%2368B738'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+    }
+  }
 }

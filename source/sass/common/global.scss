@@ -1,4 +1,4 @@
-.body {
+.container {
   margin: 0 auto;
 
   @media (min-width: $mobile-width-only) {
@@ -70,18 +70,26 @@
   }
 }
 
+.name-radio-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+  }
+}
+
 .rulers {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: $mobile-rullers;
+  margin-right: $mobile-rullers;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: $tablet-rullers;
+    margin-right: $tablet-rullers;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: $desktop-rullers;
+    margin-right: $desktop-rullers;
   }
 }
 
@@ -125,9 +133,28 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .none {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+}
+
 .button--programm {
   margin-bottom: 0;
   margin-top: auto;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -153,6 +180,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    min-width: 286px;
+    padding-top: 17px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
   }
 }
 
@@ -179,7 +213,10 @@ a:active {
 nav,
 footer,
 header,
-aside {
+aside,
+a,
+section,
+img {
   display: block;
 }
 
@@ -201,8 +238,4 @@ a:hover {
 
 ul li {
   list-style: none;
-}
-
-section {
-  display: block;
 }

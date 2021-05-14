@@ -2,7 +2,8 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 66px;
+    //padding-top: 94px;
+    padding-top: 64px;
     //padding-bottom: 33px;
   }
 
@@ -19,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 70px;
-    margin-right: 70px;
+    margin-right: 71px;
     margin-bottom: 60px;
   }
 
@@ -27,8 +28,8 @@
     //width: 34%;
     width: 495px;
     position: absolute;
-    left: 186px;
-    top: 162px;
+    left: 13%;
+    top: 40%;
     margin: 0;
     background-color: $white;
     z-index: 3;
@@ -37,12 +38,44 @@
       position: absolute;
       content: "";
       display: block;
-      width: 114%;
+      width: 115%;
       height: 268%;
       top: -88%;
       left: -15%;
       z-index: -1;
       background-color: $white;
+    }
+  }
+}
+
+.cooperation__block--color {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 35px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: $mobile-width-only;
+    height: 268%;
+    top: -48%;
+    left: -$mobile-rullers;
+    z-index: -1;
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      left: -70px;
+      top: -64px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      left: -247px;
     }
   }
 }
@@ -67,7 +100,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     width: 100px;
-    line-height: 24px;
+    line-height: 26px;
   }
 }
 
@@ -89,16 +122,38 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    justify-self: left;
   }
 }
 
 .cooperation__town {
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 24px;
+    padding-top: 26px;
   }
 }
 
 .cooperation__map {
   display: block;
+}
+
+.cooperation__map-google {
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.cooperation__map-google--form {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: -40px;
+  }
 }

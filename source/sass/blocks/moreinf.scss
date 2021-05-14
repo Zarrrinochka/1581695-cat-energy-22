@@ -1,0 +1,38 @@
+.moreinf__legend {
+  padding-top: 20px;
+  padding-bottom: 14px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 35px;
+    left: 164px;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("data:image/svg+xml,%3Csvg width='768' height='2' viewBox='0 0 768 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='322' y1='1' x2='768' y2='1' stroke='%2368B738' stroke-width='2'/%3E%3Cline y1='1' x2='30' y2='1' stroke='%2368B738' stroke-width='2'/%3E%3C/svg%3E%0A");
+      background-color: transparent;
+      width: 768px;
+      top: 83px;
+      left: -70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 86px;
+      width: $desktop-width;
+      left: -$desktop-rullers;
+      background-image: url("data:image/svg+xml,%3Csvg width='1440' height='3' viewBox='0 0 1440 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='362' y1='2' x2='1440' y2='2' stroke='%2368B738' stroke-width='2'/%3E%3Cline y1='1' x2='70' y2='1' stroke='%2368B738' stroke-width='2'/%3E%3C/svg%3E");
+    }
+  }
+}

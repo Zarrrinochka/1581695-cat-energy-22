@@ -72,17 +72,18 @@
   }
 }
 
-.main__top::after {
+.main--index::before {
   @media (min-width: $desktop-width) {
     //background-color: rgba(105, 183, 56, 0.85);
-    background-color: rgb(98, 165, 59);
+    background-color: #62a53b;
     position: absolute;
     content: "";
     width: 100%;
-    height: 100%;
+    height: 695px;
     right: -50%;
     top: -120px;
     z-index: -2;
+    overflow: hidden;
   }
 }
 

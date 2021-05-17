@@ -14,6 +14,20 @@
     flex-wrap: wrap;
     padding-top: 35px;
     padding-bottom: 0;
+    position: relative;
+  }
+}
+
+.example::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    height: 462px;
+    content: "";
+    left: 0;
+    top: 171px;
+    background-color: #f2f2f2;
+    z-index: 0;
   }
 }
 
@@ -126,7 +140,7 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     font-size: 16px;
     line-height: 24px;
     width: 700px;
@@ -217,6 +231,10 @@
     width: 709px;
     height: 520px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 760px;
+  }
 }
 
 .example__img {
@@ -235,10 +253,6 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-fat.png");
   }
-
-  // @media (min-width: $desktop-width) {
-  //   background-image: url("../img/cat-fat-desk.png");
-  // }
 }
 
 .example__img-skinny {
@@ -247,10 +261,10 @@
   background-image: url("../img/cat-skinny-mob.png");
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/cat-skinny-tab.png");
+    background-image: url("../img/cat-skinny.png");
   }
 
-  // @media (min-width: $desktop-width) {
-  //   background-image: url("../img/cat-skinny-desk.png");
-  // }
+  @media (min-width: $desktop-width) {
+    background-position: calc(100% - 55px) center;
+  }
 }

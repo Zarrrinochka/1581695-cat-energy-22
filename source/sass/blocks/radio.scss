@@ -84,6 +84,10 @@
   }
 }
 
+.radio__label:hover::before {
+  border: 1px solid #bababa;
+}
+
 .radio__label::after {
   //background-image: url("../img/radiobutton-checked.svg");
   z-index: 2;
@@ -104,4 +108,16 @@
 
 .radio__input:checked + .radio__label::after {
   opacity: 1;
+}
+
+.radio__input:disabled + .radio__label {
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.radio__input:disabled + .radio__label::before {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.radio__input:disabled + .radio__label::after {
+  opacity: 0.3;
 }

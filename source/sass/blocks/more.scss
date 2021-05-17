@@ -5,6 +5,18 @@
   line-height: 24px;
   text-align: left;
   color: $black;
+  position: relative;
+  padding-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: -21px;
+    top: 15px;
+    height: 2px;
+    width: 53px;
+    background: #68b738;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -19,6 +31,8 @@
 }
 
 .more__carts {
+  padding-bottom: 40px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +49,7 @@
   font-size: 14px;
   line-height: 14px;
   align-items: center;
-  text-align: center;
+  text-align: right;
   color: $grey;
 
   @media (min-width: $tablet-width) {
@@ -69,5 +83,14 @@
 
   @media (min-width: $desktop-width) {
     min-width: 266px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

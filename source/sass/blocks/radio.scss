@@ -110,19 +110,14 @@
   opacity: 1;
 }
 
-.radio__label:disabled::before {
-  color: rgba(186, 186, 186, 0.3);
-  border: 1px solid rgba(186, 186, 186, 0.3);
-  opacity: 0.3;
+.radio__input:disabled + .radio__label {
+  color: rgba(34, 34, 34, 0.3);
 }
 
-.radio__label:disabled {
-  color: rgba(186, 186, 186, 0.3);
+.radio__input:disabled + .radio__label::before {
   border: 1px solid rgba(186, 186, 186, 0.3);
-  opacity: 0.3;
 }
 
-input.radio__input:disabled {
-  color: rgba(186, 186, 186, 0.3);
+.radio__input:disabled + .radio__label::after {
   opacity: 0.3;
 }

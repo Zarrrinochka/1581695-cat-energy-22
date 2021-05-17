@@ -11,16 +11,3 @@ toggle.onclick = function() {
   imgburger.classList.toggle('none');
   imgburger.classList.toggle('block');
 };
-
-const input = document.querySelector('.slider__input')
-//const counter = document.querySelector('.slider__slide')
-const first = document.querySelector('.example__img-skinny')
-const second = document.querySelector('.example__img-fat')
-
-input.addEventListener('input', function(e) {
-  const value = e.target.value;
-  //counter.innerText = value;
-
-  first.style.width = value + '%'
-  second.style.width = (100 - value) + '%'
-})

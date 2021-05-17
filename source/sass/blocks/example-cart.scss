@@ -49,6 +49,10 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
 }
 
 .example-cart__text {
@@ -88,7 +92,7 @@
     line-height: 14px;
     padding-top: 0;
     //width: 151px;
-    background-color: $quite-white;
+    background-color: #f2f2f2;
     //left: 6px;
     bottom: -8px;
     padding-right: 10px;

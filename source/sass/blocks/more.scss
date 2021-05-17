@@ -31,6 +31,8 @@
 }
 
 .more__carts {
+  padding-bottom: 40px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +49,7 @@
   font-size: 14px;
   line-height: 14px;
   align-items: center;
-  text-align: center;
+  text-align: right;
   color: $grey;
 
   @media (min-width: $tablet-width) {

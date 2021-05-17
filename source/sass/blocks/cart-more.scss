@@ -1,5 +1,5 @@
 .cart-more {
-  min-height: 129px;
+  min-height: 128px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
   padding-top: 13px;
@@ -19,7 +19,8 @@
 
 .cart-more__tab {
   width: 100%;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
+  border-collapse: collapse;
 
   @media (min-width: $desktop-width) {
     width: 250px;
@@ -35,7 +36,7 @@
   text-transform: uppercase;
   color: $quite-black2;
   padding-left: 1px;
-  padding-bottom: 11px;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

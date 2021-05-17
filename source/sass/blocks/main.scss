@@ -55,14 +55,15 @@
 
 .main__top::before {
   @media (min-width: $desktop-width) {
+    background-size: cover;
+    background-position: center;
     position: absolute;
     content: "";
     background-image: url("../img/green-cat-desk.jpg");
-    background-size: 720px;
     width: 720px;
-    height: 693px;
+    height: 100%;
     right: 0;
-    top: -118px;
+    top: -120px;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {

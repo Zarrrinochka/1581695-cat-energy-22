@@ -104,12 +104,26 @@
   margin-bottom: 13px;
 }
 
+.catalog__pic--lilfrst,
 .catalog__pic--lil,
 .catalog__pic--big {
   width: 139px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: auto;
+}
+
+.catalog__pic--lilfrst {
+  margin-bottom: 19px;
+}
+
+
+.catalog__pic--lil {
+  margin-bottom: 14px;
+}
+
+.catalog__pic--big {
+  margin-bottom: 9px;
 }
 
 .catalog__text-lil {

@@ -13,6 +13,19 @@
   }
 }
 
+.cooperation--color {
+  background-color: #f2f2f2;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
 .cooperation__wrapper {
   position: relative;
 }
@@ -80,14 +93,6 @@
       width: $desktop-width;
       left: -247px;
     }
-  }
-}
-
-.cooperation--color {
-  background-color: $quite-white2;
-
-  @media (min-width: $desktop-width) {
-    background-color: $white;
   }
 }
 

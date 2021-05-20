@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 28px;
-    padding-bottom: 34px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +24,18 @@
     padding-bottom: 28px;
   }
 }
+
+// .footer__wrapper--form {
+//   padding-top: 36px;
+
+//   @media (min-width: $tablet-width) {
+//     padding-top: 29px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     padding-top: 37px;
+//   }
+// }
 
 .footer__logo {
   position: relative;
@@ -162,7 +174,7 @@
   position: relative;
   min-width: 280px;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;

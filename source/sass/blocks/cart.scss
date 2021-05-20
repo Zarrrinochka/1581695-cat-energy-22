@@ -1,14 +1,28 @@
 .cart {
   @media (min-width: $tablet-width) {
     background-color: $quite-white2;
-    width: 35%;
-    margin-bottom: 70px;
+    width: 324px;
+    padding-bottom: 39px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 23%;
-    padding-bottom: 50px;
+    width: 245px;
     margin-bottom: 80px;
-    margin-right: 20px;
+  }
+}
+
+.cart:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 142px;
+    padding-bottom: 40px;
+  }
+}
+
+.cart:nth-last-child(-n + 4) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }

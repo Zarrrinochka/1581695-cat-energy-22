@@ -61,6 +61,16 @@
 }
 
 .menu__item--current2::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    left: 0;
+    bottom: 12px;
+  }
+
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;

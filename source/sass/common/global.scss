@@ -177,9 +177,22 @@
 
 .button--order {
   font-size: 16px;
-  //margin-top: 36px;
-  //margin-top: 27px;
-  //margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 248px;
+    align-self: center;
+    line-height: 20px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    margin-bottom: 0;
+    margin-top: auto;
+    margin-right: 37px;
+    margin-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 168px;
+  }
 }
 
 .button--programm,

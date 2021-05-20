@@ -12,8 +12,8 @@ ymaps.ready(function () {
       ),
 
       myPlacemarkWithContent = new ymaps.Placemark([59.938635, 30.323118], {
-          hintContent: 'Собственный значок метки с контентом',
-          balloonContent: 'HTML Academy, first level',
+          hintContent: 'ket energy',
+          balloonContent: 'HTML Academy',
       }, {
           // Опции.
           // Необходимо указать данный тип макета.

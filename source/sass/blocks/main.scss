@@ -53,24 +53,24 @@
   }
 }
 
-.main__top::before {
-  @media (min-width: $desktop-width) {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    content: "";
-    background-image: url("../img/green-cat-desk.jpg");
-    width: 720px;
-    height: 121%;
-    right: 0;
-    top: -120px;
-    z-index: -1;
+// .main__top::before {
+//   @media (min-width: $desktop-width) {
+//     background-size: cover;
+//     background-position: center;
+//     position: absolute;
+//     content: "";
+//     background-image: url("../img/green-cat-desk.jpg");
+//     width: 720px;
+//     height: 121%;
+//     right: 0;
+//     top: -120px;
+//     z-index: -1;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/green-cat-desk@2x.jpg");
-    }
-  }
-}
+//     @media (min-resolution: 2dppx) {
+//       background-image: url("../img/green-cat-desk@2x.jpg");
+//     }
+//   }
+// }
 
 .main__index {
   @media (min-width: $desktop-width) {
@@ -79,15 +79,22 @@
 
   &::before {
     @media (min-width: $desktop-width) {
-      background-color: #62a53b;
+      background-size: cover;
+      background-position: center;
       position: absolute;
       content: "";
-      width: 50%;
-      height: 696px;
+      background-image: url("../img/green-cat-desk.jpg");
+      width: 720px;
+      height: 121%;
       right: 0;
       top: -120px;
-      z-index: -2;
+      z-index: -1;
+      background-color: #62a53b;
       overflow: hidden;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/green-cat-desk@2x.jpg");
+      }
     }
   }
 }

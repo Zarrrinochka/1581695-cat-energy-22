@@ -148,3 +148,13 @@
     padding-top: 23px;
   }
 }
+
+.main__button {
+  margin-bottom: 0;
+  margin-top: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+    margin-top: auto;
+  }
+}

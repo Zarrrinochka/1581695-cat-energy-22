@@ -3,13 +3,34 @@
   background-repeat: no-repeat;
   background-color: $green;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: contain;
+    width: 280px;
+    height: 289px;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-photo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: contain;
+      width: 708px;
+      height: 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     background-image: url("../img/gift-photo-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: contain;
+      width: 245px;
+      height: 289px;
+    }
   }
 }
 

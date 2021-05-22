@@ -250,8 +250,20 @@
   background-position: left center;
   background-image: url("../img/cat-fat-mob.png");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-fat-mob@2x.png");
+    width: 280px;
+    height: 235px;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-fat.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-fat@2x.png");
+      width: 708px;
+      height: 521px;
+    }
   }
 }
 
@@ -260,8 +272,20 @@
   background-position: right center;
   background-image: url("../img/cat-skinny-mob.png");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-skinny-mob@2x.png");
+    width: 280px;
+    height: 235px;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-skinny.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-skinny@2x.png");
+      width: 707px;
+      height: 521px;
+    }
   }
 
   @media (min-width: $desktop-width) {

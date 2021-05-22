@@ -67,7 +67,7 @@
   }
 }
 
-.catalog__first--pic {
+.catalog__pic--first {
   top: 11px;
 
   @media (min-width: $tablet-width) {
@@ -278,14 +278,16 @@
     position: relative;
   }
 
-  &::after {
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    content: "";
-    background-color: #cdcdcd;
-    left: 0;
-    bottom: 0;
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      content: "";
+      background-color: #cdcdcd;
+      left: 0;
+      bottom: 0;
+    }
   }
 }
 

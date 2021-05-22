@@ -46,9 +46,15 @@
   }
 
   &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+    left: -20px;
+    bottom: 84px;
+
     @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
       left: -30px;
       top: 55px;
       height: 2px;

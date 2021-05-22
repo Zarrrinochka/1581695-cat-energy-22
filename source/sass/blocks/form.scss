@@ -49,12 +49,6 @@
   display: block;
 }
 
-.name-radio {
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
 .form__input-text {
   font-family: $oswald;
   font-weight: 400;

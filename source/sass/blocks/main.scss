@@ -53,25 +53,6 @@
   }
 }
 
-// .main__top::before {
-//   @media (min-width: $desktop-width) {
-//     background-size: cover;
-//     background-position: center;
-//     position: absolute;
-//     content: "";
-//     background-image: url("../img/green-cat-desk.jpg");
-//     width: 720px;
-//     height: 121%;
-//     right: 0;
-//     top: -120px;
-//     z-index: -1;
-
-//     @media (min-resolution: 2dppx) {
-//       background-image: url("../img/green-cat-desk@2x.jpg");
-//     }
-//   }
-// }
-
 .main__index {
   @media (min-width: $desktop-width) {
     position: relative;
@@ -84,7 +65,7 @@
       position: absolute;
       content: "";
       background-image: url("../img/green-cat-desk.jpg");
-      width: 720px;
+      width: 50%;
       height: 121%;
       right: 0;
       top: -120px;

@@ -10,6 +10,7 @@ const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const concat = require("gulp-concat");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
@@ -44,9 +45,9 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/*.js")
+  return gulp.src("source/js/*.js")
+  .pipe(concat("script.min.js"))
     .pipe(terser())
-    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }

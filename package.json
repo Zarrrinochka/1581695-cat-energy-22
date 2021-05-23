@@ -37,7 +37,7 @@
   ],
   "editorconfig-cli": [
     "*.json",
-    "**/*.js",
+    "*.js",
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
